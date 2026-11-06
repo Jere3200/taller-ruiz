@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { formatDate, formatRelative } from "@/lib/format";
 import { STATUS } from "@/lib/status";
-import { ORDER_STATUSES, type OrderStatus, type OrderSummary } from "@/lib/types";
+import type { OrderStatus, OrderSummary } from "@/lib/types";
 import { StatusBadge } from "../StatusBadge";
 
 const detailHref = (order: OrderSummary) => `/panel/ordenes/${encodeURIComponent(order.id)}`;
@@ -119,5 +119,3 @@ export function TableView({ orders }: { orders: OrderSummary[] }) {
     </div>
   );
 }
-
-export const ALL_STATUSES: readonly OrderStatus[] = ORDER_STATUSES;

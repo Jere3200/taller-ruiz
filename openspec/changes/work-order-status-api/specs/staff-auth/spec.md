@@ -17,6 +17,10 @@ The system SHALL expose `POST /api/auth/login` with body `{ "username": string, 
 - **WHEN** the username does not exist or the password is wrong
 - **THEN** the response is `401` with `{ error: "INVALID_CREDENTIALS", message }` and the message does not reveal which of the two failed
 
+#### Scenario: Successful logins do not use up the limit
+- **WHEN** employees log in successfully more times than the attempt limit within the window
+- **THEN** those logins are accepted, and only failed attempts count towards the limit
+
 #### Scenario: Missing fields
 - **WHEN** the body lacks `username` or `password`, or either is not a non-empty string
 - **THEN** the response is `400` with `{ error: "VALIDATION_ERROR", message }`

@@ -95,6 +95,8 @@ export interface ProgressStage {
 export interface Progress {
   /** 1-based step for "Paso X de N" */
   step: number;
+  /** 0-based position of the current stage. Still set when the order is delivered, when no stage reads as "current". */
+  currentIndex: number;
   total: number;
   stages: ProgressStage[];
 }
@@ -110,7 +112,7 @@ export function buildProgress(status: OrderStatus): Progress {
     const label = isCurrent && status === "waiting_parts" ? STATUS.waiting_parts.label : (meta.short ?? meta.label);
     return { status: flowStatus, label, state: done ? "done" : isCurrent ? "current" : "todo" };
   });
-  return { step: current + 1, total: PROGRESS_FLOW.length, stages };
+  return { step: current + 1, currentIndex: current, total: PROGRESS_FLOW.length, stages };
 }
 
 export interface SummaryGroup {

@@ -51,8 +51,8 @@ export function LoginForm() {
     clearNotice();
     setLoading(true);
     try {
+      // The effect above redirects as soon as the session exists.
       await login(result.values.username, result.values.password);
-      router.push("/panel");
     } catch (error) {
       setFailure(loginErrorMessage(error));
       setLoading(false);

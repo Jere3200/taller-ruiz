@@ -36,6 +36,22 @@ describe("createApiClient", () => {
     expect(lastCall().init.headers.Authorization).toBeUndefined();
   });
 
+  it("reenvía la IP del visitante cuando se la indica", async () => {
+    const { api, lastCall } = setup(json(200, { code: "TR-1042" }));
+
+    await api.getTracking("TR-1042", { clientIp: "203.0.113.7" });
+
+    expect(lastCall().init.headers["X-Forwarded-For"]).toBe("203.0.113.7");
+  });
+
+  it("no agrega X-Forwarded-For cuando no hay IP", async () => {
+    const { api, lastCall } = setup(json(200, { code: "TR-1042" }));
+
+    await api.getTracking("TR-1042");
+
+    expect(lastCall().init.headers["X-Forwarded-For"]).toBeUndefined();
+  });
+
   it("no envía el token en el login", async () => {
     const { api, lastCall } = setup(json(200, { token: "t", user: {} }));
 

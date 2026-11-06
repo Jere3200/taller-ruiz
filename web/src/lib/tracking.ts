@@ -16,12 +16,16 @@ export function normalizeCode(param: string | string[] | undefined): string | un
 }
 
 /** Turns an API answer into what the tracking page has to show. Never throws. */
-export async function resolveTracking(api: Pick<ApiClient, "getTracking">, code: string | undefined): Promise<TrackingOutcome> {
+export async function resolveTracking(
+  api: Pick<ApiClient, "getTracking">,
+  code: string | undefined,
+  clientIp?: string,
+): Promise<TrackingOutcome> {
   if (code === undefined) return { kind: "idle" };
   if (code === "") return { kind: "empty" };
 
   try {
-    return { kind: "ok", data: await api.getTracking(code) };
+    return { kind: "ok", data: await api.getTracking(code, { clientIp }) };
   } catch (error) {
     if (error instanceof ApiError) {
       // A malformed code (400) reads the same to the visitor as one that does not exist.

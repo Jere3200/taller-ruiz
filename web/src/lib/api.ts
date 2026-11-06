@@ -31,7 +31,8 @@ export interface ApiClient {
   getOrders(): Promise<OrderSummary[]>;
   getOrder(id: string): Promise<OrderDetail>;
   updateOrderStatus(id: string, status: OrderStatus): Promise<OrderDetail>;
-  getTracking(code: string): Promise<TrackingView>;
+  /** `clientIp` is the visitor address, forwarded so the API can rate-limit each visitor instead of the Next server. */
+  getTracking(code: string, options?: { clientIp?: string }): Promise<TrackingView>;
 }
 
 /** The only place that talks HTTP: adds the token to private routes and centralises the 401 handling. */
@@ -41,9 +42,9 @@ export function createApiClient({
   fetchImpl = (...args) => fetch(...args),
   baseUrl = API_BASE_URL,
 }: ApiClientOptions): ApiClient {
-  async function request<T>(path: string, init: { method?: string; body?: unknown; auth?: boolean } = {}): Promise<T> {
+  async function request<T>(path: string, init: { method?: string; body?: unknown; auth?: boolean; headers?: Record<string, string> } = {}): Promise<T> {
     const { method = "GET", body, auth = false } = init;
-    const headers: Record<string, string> = { "Content-Type": "application/json" };
+    const headers: Record<string, string> = { "Content-Type": "application/json", ...init.headers };
     if (auth) {
       const token = getToken();
       if (token) headers.Authorization = `Bearer ${token}`;
@@ -83,6 +84,9 @@ export function createApiClient({
         body: { status },
         auth: true,
       }),
-    getTracking: (code) => request<TrackingView>(`/tracking/${encodeURIComponent(code)}`),
+    getTracking: (code, options) =>
+      request<TrackingView>(`/tracking/${encodeURIComponent(code)}`, {
+        headers: options?.clientIp ? { "X-Forwarded-For": options.clientIp } : undefined,
+      }),
   };
 }

@@ -38,3 +38,11 @@ The system SHALL limit the number of public tracking and login requests per clie
 #### Scenario: Limit exceeded
 - **WHEN** one client exceeds the allowed number of tracking requests in the window
 - **THEN** further requests receive `429` until the window ends
+
+#### Scenario: Visitors behind a trusted proxy count separately
+- **WHEN** the system is configured to trust one proxy and requests arrive with the visitor address in `X-Forwarded-For`
+- **THEN** the limit is counted per visitor address, so one visitor exhausting it does not block the others
+
+#### Scenario: Forwarded address is ignored without a trusted proxy
+- **WHEN** the system is not configured to trust a proxy and requests carry different `X-Forwarded-For` values
+- **THEN** they are still counted against the real connection address, so the header cannot be used to dodge the limit

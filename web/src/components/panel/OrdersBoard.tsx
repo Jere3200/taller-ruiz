@@ -7,7 +7,7 @@ import { STATUS } from "@/lib/status";
 import { ORDER_STATUSES } from "@/lib/types";
 import { useResource } from "@/lib/useResource";
 import { Icon } from "../icons";
-import { ALL_STATUSES, KanbanView, TableView } from "./OrderViews";
+import { KanbanView, TableView } from "./OrderViews";
 
 type View = "kanban" | "table";
 
@@ -170,7 +170,7 @@ export function OrdersBoard() {
         )}
 
         {state.status === "ok" && filtered.length > 0 && view === "kanban" && (
-          <KanbanView orders={filtered} statuses={filter === "all" ? ALL_STATUSES : [filter]} />
+          <KanbanView orders={filtered} statuses={filter === "all" ? ORDER_STATUSES : [filter]} />
         )}
         {state.status === "ok" && filtered.length > 0 && view === "table" && <TableView orders={filtered} />}
       </div>

@@ -53,6 +53,15 @@ describe("resolveTracking", () => {
     expect(result).toMatchObject({ kind: "ok", data: { code: "TR-1042" } });
   });
 
+  it("pasa la IP del visitante a la API", async () => {
+    const seen: unknown[] = [];
+    const api = { getTracking: async (_code: string, options?: { clientIp?: string }) => (seen.push(options?.clientIp), VIEW) };
+
+    await resolveTracking(api, "TR-1042", "203.0.113.7");
+
+    expect(seen).toEqual(["203.0.113.7"]);
+  });
+
   it("trata un 404 como código inexistente", async () => {
     const result = await resolveTracking(apiReturning(new ApiError(404, { error: "ORDER_NOT_FOUND" })), "TR-9999");
 

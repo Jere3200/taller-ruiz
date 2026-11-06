@@ -11,23 +11,27 @@ export interface AppDeps {
   orders: OrderService;
   auth: AuthService;
   corsOrigin: string;
+  /** Number of trusted reverse proxies in front of the API (0 = none). Needed so rate limits count real visitors. */
+  trustProxy?: number;
   logger?: Logger;
   /** Max requests per window, per client. Overridable so tests can hit the limit quickly. */
   limits?: { login?: number; tracking?: number; windowMs?: number };
 }
 
-export function createApp({ orders, auth, corsOrigin, logger = (m, e) => console.error(m, e), limits = {} }: AppDeps): Express {
+export function createApp({ orders, auth, corsOrigin, trustProxy = 0, logger = (m, e) => console.error(m, e), limits = {} }: AppDeps): Express {
   const windowMs = limits.windowMs ?? 15 * 60 * 1000;
   const app = express();
 
   app.disable("x-powered-by");
+  // Off by default: trusting X-Forwarded-For when nothing sits in front would let anyone dodge the limits.
+  if (trustProxy > 0) app.set("trust proxy", trustProxy);
   app.use(helmet());
   app.use(cors({ origin: corsOrigin, methods: ["GET", "POST", "PATCH"], allowedHeaders: ["Content-Type", "Authorization"] }));
   app.use(express.json({ limit: "10kb" }));
 
-  app.post("/api/auth/login", limiter(limits.login ?? 10, windowMs), (req, res) => {
+  app.post("/api/auth/login", limiter(limits.login ?? 10, windowMs, { skipSuccessfulRequests: true }), async (req, res) => {
     const { username, password } = parse(loginBody, req.body, "Ingresá usuario y contraseña.");
-    res.json(auth.login(username, password));
+    res.json(await auth.login(username, password));
   });
 
   app.get("/api/tracking/:code", limiter(limits.tracking ?? 60, windowMs), async (req, res) => {

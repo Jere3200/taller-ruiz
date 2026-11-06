@@ -49,6 +49,13 @@ describe("buildProgress", () => {
     expect(states("delivered")).toEqual(["done", "done", "done", "done", "done", "done"]);
   });
 
+  it("indica la posición de la etapa actual aunque la orden esté entregada", () => {
+    expect(buildProgress("received").currentIndex).toBe(0);
+    expect(buildProgress("repairing").currentIndex).toBe(3);
+    expect(buildProgress("waiting_parts").currentIndex).toBe(3);
+    expect(buildProgress("delivered").currentIndex).toBe(5);
+  });
+
   it("usa la etiqueta corta de esperando aprobación", () => {
     expect(buildProgress("awaiting_approval").stages[2]?.label).toBe("Esperando aprobación");
   });

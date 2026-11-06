@@ -29,7 +29,7 @@ npm install
 npm run dev
 ```
 
-Abre en `http://localhost:3000`. Si la API está en otra dirección, copiar `.env.example` a `.env.local` y cambiar `NEXT_PUBLIC_API_URL`. La API tiene que tener `CORS_ORIGIN` apuntando al origen del front.
+Abre en `http://localhost:3000`. Las fechas se muestran siempre en hora de Buenos Aires, sin importar la zona del servidor. Si la API está en otra dirección, copiar `.env.example` a `.env.local` y cambiar `NEXT_PUBLIC_API_URL`. La API tiene que tener `CORS_ORIGIN` apuntando al origen del front.
 
 Para probar el seguimiento público, usar un código de los datos de ejemplo de la API, por ejemplo `TR-1042` a `TR-1049`. El usuario del panel es el `DEMO_USER` del `.env` de la API, con la contraseña `DEMO_PASSWORD`.
 
@@ -66,6 +66,6 @@ Para probar el seguimiento público, usar un código de los datos de ejemplo de 
 
 - Cookie `httpOnly` en lugar de `sessionStorage` (ver arriba).
 - Tests end to end con Playwright de los flujos críticos (login, cambio de estado, seguimiento). Hoy solo se probaron a mano.
-- Paginación del tablero (hoy son 8 órdenes).
 - Datos reales del taller, dominio propio y HTTPS.
-- El `429` del seguimiento se aplica por la IP del servidor de Next y no por la del visitante: con un proxy real hay que reenviar la IP.
+- Límite por visitante del seguimiento: con `TRUSTED_PROXY_HOPS=1` (o más, según cuántos proxies de confianza haya delante de Next) el front reenvía la IP que agregó su proxy, contada desde la derecha de `X-Forwarded-For`, y la API la usa cuando tiene `TRUST_PROXY=1`. Con 0 (por defecto) se ignora el encabezado y todos los visitantes comparten el cupo de la IP del servidor de Next. Falta autenticar ese salto de Next a la API, por ejemplo con un secreto compartido, y asegurar que la API no sea accesible directamente.
+- Códigos de seguimiento aleatorios (hoy `TR-1042` es secuencial y adivinable) y paginación del tablero.

@@ -65,6 +65,18 @@ describe("POST /api/auth/login", () => {
     expect(res.body.error).toBe("VALIDATION_ERROR");
   });
 
+  it("does not count successful logins against the limit", async () => {
+    const { app } = buildApp({ limits: { login: 2 } });
+    const login = () => request(app).post("/api/auth/login").send({ username: TEST_USER, password: TEST_PASSWORD });
+    await login();
+    await login();
+    await login();
+
+    const res = await login();
+
+    expect(res.status).toBe(200);
+  });
+
   it("answers 429 after too many attempts", async () => {
     const { app } = buildApp({ limits: { login: 3 } });
     const attempt = () => request(app).post("/api/auth/login").send({ username: TEST_USER, password: "wrong" });
@@ -295,6 +307,30 @@ describe("GET /api/tracking/:code", () => {
     const res = await request(app).get("/api/tracking/TR-1042%20OR%201=1");
 
     expect(res.status).toBe(400);
+  });
+
+  it("counts each visitor separately behind a trusted proxy", async () => {
+    const { app } = buildApp({ trustProxy: 1, limits: { tracking: 2 } });
+    const lookup = (ip: string) => request(app).get("/api/tracking/TR-1042").set("X-Forwarded-For", ip);
+    await lookup("203.0.113.1");
+    await lookup("203.0.113.1");
+
+    const sameVisitor = await lookup("203.0.113.1");
+    const otherVisitor = await lookup("203.0.113.2");
+
+    expect(sameVisitor.status).toBe(429);
+    expect(otherVisitor.status).toBe(200);
+  });
+
+  it("ignores X-Forwarded-For when no proxy is trusted", async () => {
+    const { app } = buildApp({ limits: { tracking: 2 } });
+    const lookup = (ip: string) => request(app).get("/api/tracking/TR-1042").set("X-Forwarded-For", ip);
+    await lookup("203.0.113.1");
+    await lookup("203.0.113.2");
+
+    const res = await lookup("203.0.113.3");
+
+    expect(res.status).toBe(429);
   });
 
   it("answers 429 after too many requests", async () => {

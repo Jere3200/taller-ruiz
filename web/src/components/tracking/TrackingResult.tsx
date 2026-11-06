@@ -11,7 +11,7 @@ const TRACK_TODO = "#E6E3DD";
 function Progress({ status }: { status: TrackingView["status"] }) {
   const progress = buildProgress(status);
   const currentDot = STATUS[status].dot;
-  const currentIndex = progress.stages.findIndex((stage) => stage.state === "current");
+  const { currentIndex } = progress;
 
   return (
     <div className="border-t border-edge px-6 py-5.5">

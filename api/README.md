@@ -71,7 +71,7 @@ curl -X POST http://localhost:4000/api/auth/login \
 ```
 
 `200`: `{ "token": "...", "user": { "id": "u-1", "name": "Daniel Ruiz", "role": "employee" } }`.
-`400` si faltan campos. `401` `INVALID_CREDENTIALS` si el usuario o la contraseña no coinciden (mismo mensaje en ambos casos). `429` si se superan 10 intentos en 15 minutos.
+`400` si faltan campos. `401` `INVALID_CREDENTIALS` si el usuario o la contraseña no coinciden (mismo mensaje en ambos casos). `429` si se superan 10 intentos fallidos en 15 minutos por cliente (los ingresos exitosos no cuentan, para que los empleados de un mismo local no se bloqueen entre sí).
 
 ### Rutas internas (requieren `Authorization: Bearer <token>`)
 
@@ -135,7 +135,7 @@ curl http://localhost:4000/api/tracking/TR-1042
 }
 ```
 
-`404` `ORDER_NOT_FOUND`, `400` si el código tiene caracteres inválidos, `429` si se superan 60 consultas en 15 minutos.
+`404` `ORDER_NOT_FOUND`, `400` si el código tiene caracteres inválidos, `429` si se superan `TRACKING_LIMIT` consultas (60 por defecto) en 15 minutos por visitante.
 
 ## Datos de demostración
 
@@ -149,7 +149,8 @@ Ocho órdenes en todos los estados, con códigos `TR-1042` a `TR-1049`. Por ejem
 - `helmet`, CORS limitado a `CORS_ORIGIN`, cuerpo máximo de 10 KB, límite de intentos en login y seguimiento.
 - Respuesta pública con lista blanca explícita de campos ([`src/services/views.ts`](src/services/views.ts)).
 - Errores genéricos hacia el cliente; el detalle solo va al log del servidor.
-- Detrás de un proxy o balanceador hay que configurar `trust proxy` para que el límite de intentos use la IP real.
+- **Límites por visitante.** El límite se cuenta por IP. Si las consultas llegan a través del servidor de Next o de un balanceador, la API solo ve la IP de ese intermediario y todos los visitantes comparten el cupo. Con `TRUST_PROXY=1` la API toma la IP real de `X-Forwarded-For` (el front la reenvía). Usarlo **solo** cuando la API es accesible únicamente a través de ese intermediario: si estuviera expuesta, cualquiera podría falsear el encabezado y esquivar el límite. Con `TRUST_PROXY=0` (por defecto) el encabezado se ignora.
+- Contraseñas: `scrypt` asíncrono, para que un intento de login no frene al resto de las peticiones.
 
 ## Persistencia con PostgreSQL y TypeORM (cómo se implementaría)
 
@@ -176,6 +177,7 @@ El acceso a datos está detrás de la interfaz [`OrderRepository`](src/repositor
 - Paginación, logs estructurados, monitoreo y alertas.
 - Despliegue con HTTPS, dominio y variables de entorno gestionadas por el proveedor.
 - Límite de intentos compartido entre instancias (hoy es por proceso).
+- Listado de órdenes paginado: hoy `GET /api/orders` devuelve todas.
 
 ## Notas de versiones
 

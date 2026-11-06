@@ -14,6 +14,8 @@ const app = createApp({
     users: [{ id: "u-1", name: "Daniel Ruiz", username: config.DEMO_USER, passwordHash: hashPassword(config.DEMO_PASSWORD) }],
   }),
   corsOrigin: config.CORS_ORIGIN,
+  trustProxy: config.TRUST_PROXY,
+  limits: { tracking: config.TRACKING_LIMIT },
 });
 
 app.listen(config.PORT, () => {

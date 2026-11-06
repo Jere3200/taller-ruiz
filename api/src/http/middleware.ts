@@ -25,10 +25,11 @@ export function parse<T>(schema: ZodType<T>, data: unknown, message: string): T 
   return result.data;
 }
 
-export function limiter(limit: number, windowMs: number) {
+export function limiter(limit: number, windowMs: number, options: { skipSuccessfulRequests?: boolean } = {}) {
   return rateLimit({
     limit,
     windowMs,
+    skipSuccessfulRequests: options.skipSuccessfulRequests ?? false,
     standardHeaders: "draft-8",
     legacyHeaders: false,
     handler: (_req, res) => {

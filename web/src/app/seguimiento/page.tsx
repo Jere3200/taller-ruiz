@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import Link from "next/link";
 import { Suspense } from "react";
 import { Icon } from "@/components/icons";
@@ -6,6 +7,7 @@ import { Logo } from "@/components/Logo";
 import { TrackingForm } from "@/components/tracking/TrackingForm";
 import { TrackingResult } from "@/components/tracking/TrackingResult";
 import { createApiClient } from "@/lib/api";
+import { clientIpFromForwarded, trustedHopsFromEnv } from "@/lib/clientIp";
 import { SITE } from "@/lib/site";
 import { normalizeCode, resolveTracking } from "@/lib/tracking";
 
@@ -33,7 +35,13 @@ function Notice({ title, children, action }: { title: string; children?: React.R
 // Runtime data (searchParams + fetch): it must live under <Suspense> with Cache Components.
 async function TrackingContent({ searchParams }: { searchParams: PageProps<"/seguimiento">["searchParams"] }) {
   const code = normalizeCode((await searchParams).codigo);
-  const outcome = await resolveTracking(publicApi, code);
+  // The API only sees this server, so the visitor address is forwarded for its per-visitor rate limit.
+  // Only the entry added by our own trusted proxies counts; the rest of X-Forwarded-For is client-controlled.
+  const clientIp = clientIpFromForwarded(
+    (await headers()).get("x-forwarded-for"),
+    trustedHopsFromEnv(process.env.TRUSTED_PROXY_HOPS),
+  );
+  const outcome = await resolveTracking(publicApi, code, clientIp);
 
   return (
     <>
