@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="820" viewBox="0 0 1240 820">
+  <rect width="1240" height="820" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1240" height="90" rx="0" fill="#01225E" stroke="none" stroke-width="1"/>
+  <text x="40" y="40" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#F6A46E" text-anchor="start"><tspan x="40" dy="0">USER PERSONA</tspan></text>
+  <text x="40" y="72" font-family="Inter, Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="start"><tspan x="40" dy="0">Luciano Gómez, mecánico encargado del Taller Ruiz</tspan></text>
+  <rect x="40" y="120" width="300" height="660" rx="10" fill="#F4F2EE" stroke="#DEDAD3" stroke-width="1"/>
+  <circle cx="190" cy="220" r="62" fill="#01225E" stroke="none" stroke-width="1"/>
+  <text x="190" y="232" font-family="Inter, Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="190" dy="0">LG</tspan></text>
+  <text x="190" y="330" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#14191C" text-anchor="middle"><tspan x="190" dy="0">Luciano Gómez</tspan></text>
+  <text x="190" y="358" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#5A6167" text-anchor="middle"><tspan x="190" dy="0">38 años, Villa Crespo</tspan></text>
+  <text x="190" y="380" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#5A6167" text-anchor="middle"><tspan x="190" dy="0">Mecánico encargado, 15 años en el rubro</tspan></text>
+  <text x="64" y="430" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="64" dy="0">HABILIDAD DIGITAL</tspan></text>
+  <text x="64" y="458" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="64" dy="0">Celular y WhatsApp</tspan></text>
+  <rect x="64" y="468" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="110" y="468" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="156" y="468" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="202" y="468" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="248" y="468" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <text x="64" y="504" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="64" dy="0">Tablet</tspan></text>
+  <rect x="64" y="514" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="110" y="514" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="156" y="514" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="202" y="514" width="40" height="10" rx="3" fill="#DEDAD3" stroke="none" stroke-width="1"/>
+  <rect x="248" y="514" width="40" height="10" rx="3" fill="#DEDAD3" stroke="none" stroke-width="1"/>
+  <text x="64" y="550" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="64" dy="0">Computadora</tspan></text>
+  <rect x="64" y="560" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="110" y="560" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="156" y="560" width="40" height="10" rx="3" fill="#DEDAD3" stroke="none" stroke-width="1"/>
+  <rect x="202" y="560" width="40" height="10" rx="3" fill="#DEDAD3" stroke="none" stroke-width="1"/>
+  <rect x="248" y="560" width="40" height="10" rx="3" fill="#DEDAD3" stroke="none" stroke-width="1"/>
+  <text x="64" y="596" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="64" dy="0">Sistemas de gestión</tspan></text>
+  <rect x="64" y="606" width="40" height="10" rx="3" fill="#01225E" stroke="none" stroke-width="1"/>
+  <rect x="110" y="606" width="40" height="10" rx="3" fill="#DEDAD3" stroke="none" stroke-width="1"/>
+  <rect x="156" y="606" width="40" height="10" rx="3" fill="#DEDAD3" stroke="none" stroke-width="1"/>
+  <rect x="202" y="606" width="40" height="10" rx="3" fill="#DEDAD3" stroke="none" stroke-width="1"/>
+  <rect x="248" y="606" width="40" height="10" rx="3" fill="#DEDAD3" stroke="none" stroke-width="1"/>
+  <rect x="64" y="650" width="252" height="112" rx="8" fill="#FFFFFF" stroke="#DEDAD3" stroke-width="1"/>
+  <text x="76" y="674" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#E46715" text-anchor="start"><tspan x="76" dy="0">Persona ficticia</tspan></text>
+  <text x="76" y="692" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#5A6167" text-anchor="start"><tspan x="76" dy="0">Se armó con supuestos sobre el</tspan><tspan x="76" dy="16">taller, sin entrevistas. Hay que</tspan><tspan x="76" dy="16">validarla con los empleados</tspan><tspan x="76" dy="16">reales.</tspan></text>
+  <rect x="370" y="120" width="410" height="200" rx="10" fill="#FFFFFF" stroke="#DEDAD3" stroke-width="1"/>
+  <rect x="370" y="120" width="6" height="200" rx="3" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="394" y="156" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="394" dy="0">Perfil y contexto</tspan></text>
+  <text x="394" y="188" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="394" dy="0">Coordina el trabajo diario con los otros tres</tspan><tspan x="394" dy="21">empleados. Pasa el día de pie y con las manos</tspan><tspan x="394" dy="21">sucias. Usa el celular todo el tiempo, sobre todo</tspan><tspan x="394" dy="21">WhatsApp, y una tablet que compró el dueño para el</tspan><tspan x="394" dy="21">taller. La computadora casi no la toca.</tspan></text>
+  <rect x="810" y="120" width="410" height="200" rx="10" fill="#FFFFFF" stroke="#DEDAD3" stroke-width="1"/>
+  <rect x="810" y="120" width="6" height="200" rx="3" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="834" y="156" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="834" dy="0">Objetivos</tspan></text>
+  <text x="834" y="188" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="834" dy="0">Ver de un vistazo qué vehículos hay y en qué etapa</tspan><tspan x="834" dy="21">están. Actualizar el estado apenas termina una</tspan><tspan x="834" dy="21">tarea, sin dejar el trabajo. Que los clientes dejen</tspan><tspan x="834" dy="21">de llamar para preguntar por su auto.</tspan></text>
+  <rect x="370" y="340" width="410" height="200" rx="10" fill="#FFFFFF" stroke="#DEDAD3" stroke-width="1"/>
+  <rect x="370" y="340" width="6" height="200" rx="3" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="394" y="376" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="394" dy="0">Necesidades</tspan></text>
+  <text x="394" y="408" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="394" dy="0">Pantalla legible y botones grandes. Encontrar un</tspan><tspan x="394" dy="21">auto por patente en segundos. Pocos pasos y palabras</tspan><tspan x="394" dy="21">del taller, no de sistemas. Que el sistema no lo</tspan><tspan x="394" dy="21">deje equivocarse de etapa.</tspan></text>
+  <rect x="810" y="340" width="410" height="200" rx="10" fill="#FFFFFF" stroke="#DEDAD3" stroke-width="1"/>
+  <rect x="810" y="340" width="6" height="200" rx="3" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="834" y="376" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="834" dy="0">Dificultades con el sistema actual</tspan></text>
+  <text x="834" y="408" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="834" dy="0">Hoy anota en papel y las hojas se pierden. Los</tspan><tspan x="834" dy="21">clientes llaman y lo interrumpen varias veces al</tspan><tspan x="834" dy="21">día. Desconfía de los sistemas complicados y los</tspan><tspan x="834" dy="21">abandona. Si se equivoca de estado, no sabe cómo</tspan><tspan x="834" dy="21">corregirlo.</tspan></text>
+  <rect x="370" y="560" width="850" height="90" rx="10" fill="#E4EAF5" stroke="none" stroke-width="1"/>
+  <text x="396" y="596" font-family="Inter, Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="396" dy="0">«Quiero marcar que el auto está listo y seguir trabajando.</tspan></text>
+  <text x="396" y="626" font-family="Inter, Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="396" dy="0">Si me hace dar muchas vueltas, vuelvo al papel.»</tspan></text>
+  <rect x="370" y="670" width="850" height="110" rx="10" fill="#FFFFFF" stroke="#DEDAD3" stroke-width="1"/>
+  <text x="394" y="700" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#E46715" text-anchor="start"><tspan x="394" dy="0">Escenario de uso</tspan></text>
+  <text x="394" y="724" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="394" dy="0">Termina el diagnóstico de un Fiat Cronos. Agarra la tablet, busca la patente, abre la orden y pasa</tspan><tspan x="394" dy="21">el estado a «Esperando aprobación del cliente». Todo en menos de medio minuto y sin dejar de</tspan><tspan x="394" dy="21">trabajar.</tspan></text>
+</svg>

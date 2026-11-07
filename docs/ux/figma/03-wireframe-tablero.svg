@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1040" viewBox="0 0 1400 1040">
+  <rect width="1400" height="1040" fill="#FFFFFF"/>
+  <text x="40" y="40" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#333333" text-anchor="start"><tspan x="40" dy="0">Wireframe de baja fidelidad: tablero de órdenes (tablet o computadora)</tspan></text>
+  <text x="40" y="66" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#666666" text-anchor="start"><tspan x="40" dy="0">Pantalla principal del empleado. Los números naranjas se explican abajo y en la justificación.</tspan></text>
+  <rect x="40" y="90" width="1320" height="700" rx="6" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="2"/>
+  <rect x="40" y="90" width="210" height="700" rx="0" fill="#E6E6E6" stroke="#8A8A8A" stroke-width="1"/>
+  <rect x="60" y="110" width="170" height="44" rx="0" fill="#BDBDBD" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="145" y="138" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="145" dy="0">LOGO</tspan></text>
+  <rect x="54" y="180" width="182" height="44" rx="0" fill="#BDBDBD" stroke="#333333" stroke-width="2"/>
+  <text x="74" y="208" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start"><tspan x="74" dy="0">Órdenes</tspan></text>
+  <rect x="54" y="234" width="182" height="44" rx="0" fill="none" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="74" y="262" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#333333" text-anchor="start"><tspan x="74" dy="0">Ver sitio público</tspan></text>
+  <rect x="250" y="90" width="1110" height="60" rx="0" fill="#F5F5F5" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="276" y="128" font-family="Inter, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#333333" text-anchor="start"><tspan x="276" dy="0">Órdenes</tspan></text>
+  <circle cx="1030" cy="120" r="17" fill="#BDBDBD" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="1058" y="126" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start"><tspan x="1058" dy="0">Nombre del empleado</tspan></text>
+  <rect x="1210" y="102" width="130" height="36" rx="4" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="1275" y="126" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#333333" text-anchor="middle"><tspan x="1275" dy="0">Cerrar sesión</tspan></text>
+  <text x="280" y="202" font-family="Inter, Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#333333" text-anchor="start"><tspan x="280" dy="0">Órdenes</tspan></text>
+  <text x="280" y="228" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#666666" text-anchor="start"><tspan x="280" dy="0">N órdenes activas en el taller</tspan></text>
+  <rect x="1200" y="180" width="130" height="40" rx="4" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="1265" y="206" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="middle"><tspan x="1265" dy="0">Actualizar</tspan></text>
+  <rect x="280" y="250" width="248" height="96" rx="6" fill="#F5F5F5" stroke="#8A8A8A" stroke-width="1"/>
+  <circle cx="298" cy="272" r="5" fill="#8A8A8A" stroke="none" stroke-width="1"/>
+  <text x="310" y="277" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="310" dy="0">En diagnóstico</tspan></text>
+  <text x="298" y="316" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#333333" text-anchor="start"><tspan x="298" dy="0">0</tspan></text>
+  <text x="298" y="336" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#666666" text-anchor="start"><tspan x="298" dy="0">Incluye recibidas y esperando aprobación</tspan></text>
+  <rect x="542" y="250" width="248" height="96" rx="6" fill="#F5F5F5" stroke="#8A8A8A" stroke-width="1"/>
+  <circle cx="560" cy="272" r="5" fill="#8A8A8A" stroke="none" stroke-width="1"/>
+  <text x="572" y="277" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="572" dy="0">En reparación</tspan></text>
+  <text x="560" y="316" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#333333" text-anchor="start"><tspan x="560" dy="0">0</tspan></text>
+  <text x="560" y="336" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#666666" text-anchor="start"><tspan x="560" dy="0">Trabajo en curso</tspan></text>
+  <rect x="804" y="250" width="248" height="96" rx="6" fill="#F5F5F5" stroke="#8A8A8A" stroke-width="1"/>
+  <circle cx="822" cy="272" r="5" fill="#8A8A8A" stroke="none" stroke-width="1"/>
+  <text x="834" y="277" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="834" dy="0">Esperando repuestos</tspan></text>
+  <text x="822" y="316" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#333333" text-anchor="start"><tspan x="822" dy="0">0</tspan></text>
+  <text x="822" y="336" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#666666" text-anchor="start"><tspan x="822" dy="0">En pausa hasta que lleguen</tspan></text>
+  <rect x="1066" y="250" width="248" height="96" rx="6" fill="#F5F5F5" stroke="#8A8A8A" stroke-width="1"/>
+  <circle cx="1084" cy="272" r="5" fill="#8A8A8A" stroke="none" stroke-width="1"/>
+  <text x="1096" y="277" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="1096" dy="0">Listas para retirar</tspan></text>
+  <text x="1084" y="316" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#333333" text-anchor="start"><tspan x="1084" dy="0">0</tspan></text>
+  <text x="1084" y="336" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#666666" text-anchor="start"><tspan x="1084" dy="0">Coordinar el retiro con el cliente</tspan></text>
+  <rect x="280" y="366" width="420" height="42" rx="4" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="324" y="393" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#777777" text-anchor="start"><tspan x="324" dy="0">Buscar por patente, código o cliente</tspan></text>
+  <circle cx="302" cy="387" r="8" fill="none" stroke="#8A8A8A" stroke-width="2"/>
+  <rect x="716" y="366" width="220" height="42" rx="4" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="732" y="393" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#333333" text-anchor="start"><tspan x="732" dy="0">Todos los estados</tspan></text>
+  <polygon points="908,382 922,382 915,392" fill="#333333" stroke="none" stroke-width="1"/>
+  <rect x="952" y="366" width="200" height="42" rx="4" fill="#E6E6E6" stroke="#8A8A8A" stroke-width="1"/>
+  <rect x="956" y="370" width="96" height="34" rx="3" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="1004" y="393" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="1004" dy="0">Columnas</tspan></text>
+  <text x="1102" y="393" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#333333" text-anchor="middle"><tspan x="1102" dy="0">Tabla</tspan></text>
+  <rect x="280" y="432" width="248" height="336" rx="6" fill="#E6E6E6" stroke="#8A8A8A" stroke-width="1"/>
+  <circle cx="300" cy="456" r="5" fill="#8A8A8A" stroke="none" stroke-width="1"/>
+  <text x="312" y="461" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#333333" text-anchor="start"><tspan x="312" dy="0">Recibido</tspan></text>
+  <rect x="480" y="445" width="34" height="22" rx="11" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="497" y="461" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="497" dy="0">1</tspan></text>
+  <rect x="290" y="482" width="228" height="128" rx="5" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="304" y="510" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="304" dy="0">TR-0000</tspan></text>
+  <text x="506" y="510" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#777777" text-anchor="end"><tspan x="506" dy="0">hace 35 min</tspan></text>
+  <text x="304" y="538" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start"><tspan x="304" dy="0">Marca y modelo</tspan></text>
+  <text x="304" y="560" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#666666" text-anchor="start"><tspan x="304" dy="0">Nombre del cliente</tspan></text>
+  <rect x="304" y="574" width="84" height="24" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+  <text x="346" y="591" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="346" dy="0">AB 123 CD</tspan></text>
+  <rect x="542" y="432" width="248" height="336" rx="6" fill="#E6E6E6" stroke="#8A8A8A" stroke-width="1"/>
+  <circle cx="562" cy="456" r="5" fill="#8A8A8A" stroke="none" stroke-width="1"/>
+  <text x="574" y="461" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#333333" text-anchor="start"><tspan x="574" dy="0">En diagnóstico</tspan></text>
+  <rect x="742" y="445" width="34" height="22" rx="11" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="759" y="461" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="759" dy="0">2</tspan></text>
+  <rect x="552" y="482" width="228" height="128" rx="5" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="566" y="510" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="566" dy="0">TR-0000</tspan></text>
+  <text x="768" y="510" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#777777" text-anchor="end"><tspan x="768" dy="0">hace 35 min</tspan></text>
+  <text x="566" y="538" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start"><tspan x="566" dy="0">Marca y modelo</tspan></text>
+  <text x="566" y="560" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#666666" text-anchor="start"><tspan x="566" dy="0">Nombre del cliente</tspan></text>
+  <rect x="566" y="574" width="84" height="24" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+  <text x="608" y="591" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="608" dy="0">AB 123 CD</tspan></text>
+  <rect x="552" y="622" width="228" height="128" rx="5" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="566" y="650" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="566" dy="0">TR-0000</tspan></text>
+  <text x="768" y="650" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#777777" text-anchor="end"><tspan x="768" dy="0">hace 35 min</tspan></text>
+  <text x="566" y="678" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start"><tspan x="566" dy="0">Marca y modelo</tspan></text>
+  <text x="566" y="700" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#666666" text-anchor="start"><tspan x="566" dy="0">Nombre del cliente</tspan></text>
+  <rect x="566" y="714" width="84" height="24" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+  <text x="608" y="731" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="608" dy="0">AB 123 CD</tspan></text>
+  <rect x="804" y="432" width="248" height="336" rx="6" fill="#E6E6E6" stroke="#8A8A8A" stroke-width="1"/>
+  <circle cx="824" cy="456" r="5" fill="#8A8A8A" stroke="none" stroke-width="1"/>
+  <text x="836" y="461" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#333333" text-anchor="start"><tspan x="836" dy="0">Esperando aprobación</tspan></text>
+  <rect x="1004" y="445" width="34" height="22" rx="11" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="1021" y="461" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="1021" dy="0">1</tspan></text>
+  <rect x="814" y="482" width="228" height="128" rx="5" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="828" y="510" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="828" dy="0">TR-0000</tspan></text>
+  <text x="1030" y="510" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#777777" text-anchor="end"><tspan x="1030" dy="0">hace 35 min</tspan></text>
+  <text x="828" y="538" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start"><tspan x="828" dy="0">Marca y modelo</tspan></text>
+  <text x="828" y="560" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#666666" text-anchor="start"><tspan x="828" dy="0">Nombre del cliente</tspan></text>
+  <rect x="828" y="574" width="84" height="24" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+  <text x="870" y="591" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="870" dy="0">AB 123 CD</tspan></text>
+  <rect x="1066" y="432" width="248" height="336" rx="6" fill="#E6E6E6" stroke="#8A8A8A" stroke-width="1"/>
+  <circle cx="1086" cy="456" r="5" fill="#8A8A8A" stroke="none" stroke-width="1"/>
+  <text x="1098" y="461" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#333333" text-anchor="start"><tspan x="1098" dy="0">En reparación</tspan></text>
+  <rect x="1266" y="445" width="34" height="22" rx="11" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="1283" y="461" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="1283" dy="0">2</tspan></text>
+  <rect x="1076" y="482" width="228" height="128" rx="5" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="1090" y="510" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="1090" dy="0">TR-0000</tspan></text>
+  <text x="1292" y="510" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#777777" text-anchor="end"><tspan x="1292" dy="0">hace 35 min</tspan></text>
+  <text x="1090" y="538" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start"><tspan x="1090" dy="0">Marca y modelo</tspan></text>
+  <text x="1090" y="560" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#666666" text-anchor="start"><tspan x="1090" dy="0">Nombre del cliente</tspan></text>
+  <rect x="1090" y="574" width="84" height="24" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+  <text x="1132" y="591" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="1132" dy="0">AB 123 CD</tspan></text>
+  <rect x="1076" y="622" width="228" height="128" rx="5" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="1"/>
+  <text x="1090" y="650" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#333333" text-anchor="start"><tspan x="1090" dy="0">TR-0000</tspan></text>
+  <text x="1292" y="650" font-family="Inter, Arial, Helvetica, sans-serif" font-size="11" font-weight="400" fill="#777777" text-anchor="end"><tspan x="1292" dy="0">hace 35 min</tspan></text>
+  <text x="1090" y="678" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start"><tspan x="1090" dy="0">Marca y modelo</tspan></text>
+  <text x="1090" y="700" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#666666" text-anchor="start"><tspan x="1090" dy="0">Nombre del cliente</tspan></text>
+  <rect x="1090" y="714" width="84" height="24" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+  <text x="1132" y="731" font-family="Inter, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#333333" text-anchor="middle"><tspan x="1132" dy="0">AB 123 CD</tspan></text>
+  <rect x="1328" y="432" width="60" height="336" rx="6" fill="#E6E6E6" stroke="#8A8A8A" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="1358" y="610" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="400" fill="#8A8A8A" text-anchor="middle"><tspan x="1358" dy="0">→</tspan></text>
+  <circle cx="236" cy="202" r="14" fill="#E46715" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="236" y="207" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="236" dy="0">1</tspan></text>
+  <circle cx="926" cy="240" r="14" fill="#E46715" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="926" y="245" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="926" dy="0">2</tspan></text>
+  <circle cx="710" cy="352" r="14" fill="#E46715" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="710" y="357" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="710" dy="0">3</tspan></text>
+  <circle cx="1160" cy="352" r="14" fill="#E46715" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="1160" y="357" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="1160" dy="0">4</tspan></text>
+  <circle cx="572" cy="430" r="14" fill="#E46715" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="572" y="435" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="572" dy="0">5</tspan></text>
+  <circle cx="780" cy="482" r="14" fill="#E46715" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="780" y="487" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="780" dy="0">6</tspan></text>
+  <text x="40" y="830" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#333333" text-anchor="start"><tspan x="40" dy="0">Referencias</tspan></text>
+  <circle cx="54" cy="857" r="12" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="54" y="862" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="54" dy="0">1</tspan></text>
+  <text x="76" y="862" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#333333" text-anchor="start"><tspan x="76" dy="0">Navegación: solo dos destinos, para no perderse.</tspan></text>
+  <circle cx="54" cy="897" r="12" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="54" y="902" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="54" dy="0">2</tspan></text>
+  <text x="76" y="902" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#333333" text-anchor="start"><tspan x="76" dy="0">Resumen: cuántas órdenes hay en cada etapa, para saber qué atender</tspan><tspan x="76" dy="17">primero.</tspan></text>
+  <circle cx="54" cy="937" r="12" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="54" y="942" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="54" dy="0">3</tspan></text>
+  <text x="76" y="942" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#333333" text-anchor="start"><tspan x="76" dy="0">Búsqueda por patente, código o cliente, y filtro por estado.</tspan></text>
+  <circle cx="714" cy="857" r="12" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="714" y="862" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="714" dy="0">4</tspan></text>
+  <text x="736" y="862" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#333333" text-anchor="start"><tspan x="736" dy="0">Cambio de vista: columnas por estado o tabla.</tspan></text>
+  <circle cx="714" cy="897" r="12" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="714" y="902" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="714" dy="0">5</tspan></text>
+  <text x="736" y="902" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#333333" text-anchor="start"><tspan x="736" dy="0">Una columna por estado: es el proceso real del taller, de izquierda a</tspan><tspan x="736" dy="17">derecha.</tspan></text>
+  <circle cx="714" cy="937" r="12" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="714" y="942" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="714" dy="0">6</tspan></text>
+  <text x="736" y="942" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#333333" text-anchor="start"><tspan x="736" dy="0">Tarjeta de la orden: código, vehículo, cliente y patente. Un clic abre el</tspan><tspan x="736" dy="17">detalle.</tspan></text>
+</svg>

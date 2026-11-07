@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1010" viewBox="0 0 1240 1010">
+  <rect width="1240" height="1010" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1240" height="110" rx="0" fill="#01225E" stroke="none" stroke-width="1"/>
+  <text x="40" y="44" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#F6A46E" text-anchor="start"><tspan x="40" dy="0">JUSTIFICACIÓN DE DISEÑO</tspan></text>
+  <text x="40" y="80" font-family="Inter, Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#FFFFFF" text-anchor="start"><tspan x="40" dy="0">Cambiar el estado de una orden: tablero y detalle</tspan></text>
+  <rect x="40" y="140" width="1160" height="224" rx="10" fill="#FFFFFF" stroke="#DEDAD3" stroke-width="1"/>
+  <rect x="40" y="140" width="8" height="224" rx="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="72" y="180" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="72" dy="0">Facilidad de uso</tspan></text>
+  <circle cx="78" cy="207" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="212" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Botones y campos grandes, pensados para una tablet usada en el taller, con las manos sucias.</tspan></text>
+  <circle cx="78" cy="238" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="243" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">La búsqueda por patente (3 en el wireframe) responde a lo que el empleado tiene a mano frente al vehículo.</tspan></text>
+  <circle cx="78" cy="269" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="274" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Los botones dicen lo que pasa, con las palabras del taller: «Pasar a En reparación», no «Actualizar registro».</tspan></text>
+  <circle cx="78" cy="300" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="305" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Desde el tablero se llega al cambio en tres pasos: abrir la orden, elegir el estado y, si hace falta, confirmar.</tspan></text>
+  <rect x="40" y="384" width="1160" height="224" rx="10" fill="#FFFFFF" stroke="#DEDAD3" stroke-width="1"/>
+  <rect x="40" y="384" width="8" height="224" rx="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="72" y="424" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="72" dy="0">Organización de la información</tspan></text>
+  <circle cx="78" cy="451" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="456" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Primero el resumen (2): qué hay y en qué etapa, antes que el detalle de cada auto.</tspan></text>
+  <circle cx="78" cy="482" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="487" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Una columna por estado (5): el tablero repite el proceso real, de izquierda a derecha.</tspan></text>
+  <circle cx="78" cy="513" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="518" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">La tarjeta (6) muestra solo lo que sirve para reconocer el auto: código, vehículo, cliente y patente.</tspan></text>
+  <circle cx="78" cy="544" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="549" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">El estado se dice con texto y con color, nunca solo con color. En el detalle, el estado actual va destacado y el</tspan><tspan x="94" dy="20">historial debajo.</tspan></text>
+  <rect x="40" y="628" width="1160" height="224" rx="10" fill="#FFFFFF" stroke="#DEDAD3" stroke-width="1"/>
+  <rect x="40" y="628" width="8" height="224" rx="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="72" y="668" font-family="Inter, Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="72" dy="0">Prevención de errores</tspan></text>
+  <circle cx="78" cy="695" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="700" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Solo se ofrecen los estados válidos desde el actual. Quien decide es la API, así que la interfaz no puede inventar</tspan><tspan x="94" dy="20">saltos.</tspan></text>
+  <circle cx="78" cy="746" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="751" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Cancelar y entregar cierran la orden: piden confirmación y explican qué va a pasar.</tspan></text>
+  <circle cx="78" cy="777" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="782" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Si el servidor rechaza un cambio, se muestra su mensaje y el estado no cambia: no hay datos a medias.</tspan></text>
+  <circle cx="78" cy="808" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
+  <text x="94" y="813" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Si la sesión vence, se vuelve al login con un aviso claro. El seguimiento público nunca muestra nombre ni teléfono del</tspan><tspan x="94" dy="20">cliente.</tspan></text>
+  <rect x="40" y="874" width="1160" height="84" rx="10" fill="#E4EAF5" stroke="none" stroke-width="1"/>
+  <text x="64" y="904" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#01225E" text-anchor="start"><tspan x="64" dy="0">Las decisiones parten de la persona Luciano y de las restricciones del cliente: presupuesto reducido, personal sin conocimientos técnicos y datos de clientes que hay que proteger.</tspan></text>
+  <text x="64" y="928" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="64" dy="0">Limitación: son decisiones de diseño sin pruebas con usuarios. Se validarían con los empleados reales en la prueba piloto.</tspan></text>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "name": "taller-ruiz-diapositivas",
+  "private": true,
+  "description": "Genera las diapositivas de la defensa del parcial (8 diapositivas, 2 por integrante)",
+  "scripts": {
+    "generar": "node generar.js"
+  },
+  "dependencies": {
+    "pptxgenjs": "4.0.1",
+    "jszip": "3.10.2"
+  }
+}

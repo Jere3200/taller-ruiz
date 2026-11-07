@@ -69,7 +69,12 @@ Segunda etapa, que no está en el MVP:
 | Reportes | 16 a 24 |
 | **Total de la segunda etapa** | **70 a 109** |
 
-**Valor hora de referencia: pendiente.** El costo de implementación es `horas × valor hora`, y el valor hay que fijarlo y justificarlo con una fuente (por ejemplo, honorarios sugeridos de un consejo profesional o una escala salarial del rubro). No se asumió ninguno.
+**Valor hora de referencia: USD 10**, para el desarrollo y también para el mantenimiento. Es un valor fijado por el grupo para un equipo en formación, y es **menor que las referencias de mercado consultadas**:
+
+- El Consejo Profesional de Ciencias Informáticas de La Rioja ([tabla de abril de 2026](https://cpcilar.org.ar/wp-content/uploads/2026/05/TablaHonorariosAbril2026-3.pdf)) sugiere como mínimo $90.777 por hora para programación de páginas web y $99.205 para administración de sistemas. Al dólar oficial vendedor de $1.570 son unos USD 58 y USD 63.
+- El Colegio de Profesionales de Ciencias Informáticas de San Juan publica, sin fecha, $70.000 por hora para un desarrollador Full Stack ([fuente](https://cpci.com.ar/Honorarios.html)).
+
+Costo del MVP: de **USD 2.060 a USD 2.940** (206 a 294 horas). Cotización de referencia: dólar oficial vendedor de $1.570 el 5 de noviembre de 2026 ([dolarapi.com](https://dolarapi.com/v1/dolares/oficial)), que equivale a $3.234.200 a $4.615.800. Cambia todos los días: la infraestructura está cotizada en pesos y la mano de obra en dólares.
 
 ## 3. Costos recurrentes
 
@@ -79,7 +84,7 @@ Segunda etapa, que no está en el MVP:
 | Dominio `.com.ar` | $708,33 (el anual dividido en 12) | NIC Argentina |
 | DNS, CDN y certificado | $0 | Cloudflare |
 | Copias diarias del servidor | A cotizar | Proveedor de infraestructura |
-| Mantenimiento y soporte | 4 a 8 horas por mes × valor hora | Consultora |
+| Mantenimiento y soporte | USD 40 a USD 80 (4 a 8 horas × USD 10), unos $62.800 a $125.600 | Consultora |
 
 El mantenimiento incluye actualizaciones del sistema y de la aplicación, control de las copias de seguridad con una prueba de restauración periódica, monitoreo, renovación de certificados y atención de incidentes. Las 4 a 8 horas son una estimación a revisar.
 

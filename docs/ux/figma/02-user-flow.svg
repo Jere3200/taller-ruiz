@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1700" viewBox="0 0 2000 1700">
+  <rect width="2000" height="1700" fill="#FFFFFF"/>
+  <text x="40" y="44" font-family="Inter, Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="40" dy="0">User flow: cambiar el estado de una orden de trabajo</tspan></text>
+  <text x="40" y="70" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#5A6167" text-anchor="start"><tspan x="40" dy="0">Usuario: empleado del taller. Los rombos son decisiones; los colores indican el tipo de paso.</tspan></text>
+  <rect x="330.0" y="102.0" width="300" height="56" rx="28.0" fill="#01225E" stroke="none" stroke-width="1"/>
+  <text x="480" y="125.5" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="480" dy="0">Inicio: el empleado quiere cambiar</tspan><tspan x="480" dy="19.5">el estado de una orden</tspan></text>
+  <polygon points="480,213.0 650.0,275 480,337.0 310.0,275" fill="#FCEFD6" stroke="#D98A0B" stroke-width="2"/>
+  <text x="480" y="270.79999999999995" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">¿Tiene sesión</tspan><tspan x="480" dy="18.2">iniciada?</tspan></text>
+  <rect x="800.0" y="240.0" width="300" height="70" rx="8" fill="#E4EAF5" stroke="#01225E" stroke-width="2"/>
+  <text x="950" y="270.5" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="950" dy="0">Pantalla de login: usuario y</tspan><tspan x="950" dy="19.5">contraseña</tspan></text>
+  <polygon points="950,383.0 1120.0,445 950,507.0 780.0,445" fill="#FCEFD6" stroke="#D98A0B" stroke-width="2"/>
+  <text x="950" y="449.9" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#14191C" text-anchor="middle"><tspan x="950" dy="0">¿Credenciales válidas?</tspan></text>
+  <rect x="1270.0" y="410.0" width="300" height="70" rx="8" fill="#FBE1E1" stroke="#D02A31" stroke-width="2"/>
+  <text x="1420" y="430.75" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="1420" dy="0">Aviso: usuario o contraseña</tspan><tspan x="1420" dy="19.5">incorrectos, sin decir cuál</tspan><tspan x="1420" dy="19.5">falló</tspan></text>
+  <rect x="330.0" y="410.0" width="300" height="70" rx="8" fill="#E4EAF5" stroke="#01225E" stroke-width="2"/>
+  <text x="480" y="440.5" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">Tablero de órdenes: resumen y</tspan><tspan x="480" dy="19.5">columnas por estado</tspan></text>
+  <rect x="330.0" y="545.0" width="300" height="70" rx="8" fill="#E4EAF5" stroke="#01225E" stroke-width="2"/>
+  <text x="480" y="575.5" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">Buscar por patente, código o</tspan><tspan x="480" dy="19.5">cliente, o filtrar por estado</tspan></text>
+  <rect x="330.0" y="665.0" width="300" height="70" rx="8" fill="#E4EAF5" stroke="#01225E" stroke-width="2"/>
+  <text x="480" y="705.25" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">Abrir el detalle de la orden</tspan></text>
+  <polygon points="480,783.0 650.0,845 480,907.0 310.0,845" fill="#FCEFD6" stroke="#D98A0B" stroke-width="2"/>
+  <text x="480" y="840.8" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">¿La orden tiene</tspan><tspan x="480" dy="18.2">estados siguientes?</tspan></text>
+  <rect x="800.0" y="810.0" width="300" height="70" rx="8" fill="#E4EAF5" stroke="#01225E" stroke-width="2"/>
+  <text x="950" y="840.5" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="950" dy="0">Se muestra «Orden finalizada»:</tspan><tspan x="950" dy="19.5">no admite cambios</tspan></text>
+  <rect x="850.0" y="957.0" width="200" height="56" rx="28.0" fill="#01225E" stroke="none" stroke-width="1"/>
+  <text x="950" y="990.25" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="950" dy="0">Fin</tspan></text>
+  <rect x="330.0" y="955.0" width="300" height="70" rx="8" fill="#E4EAF5" stroke="#01225E" stroke-width="2"/>
+  <text x="480" y="985.5" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">Elegir el nuevo estado entre los</tspan><tspan x="480" dy="19.5">botones ofrecidos</tspan></text>
+  <polygon points="480,1068.0 650.0,1130 480,1192.0 310.0,1130" fill="#FCEFD6" stroke="#D98A0B" stroke-width="2"/>
+  <text x="480" y="1125.8000000000002" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">¿Es Cancelar o</tspan><tspan x="480" dy="18.2">Entregar?</tspan></text>
+  <rect x="800.0" y="1095.0" width="300" height="70" rx="8" fill="#E4EAF5" stroke="#01225E" stroke-width="2"/>
+  <text x="950" y="1115.75" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="950" dy="0">Diálogo de confirmación:</tspan><tspan x="950" dy="19.5">explica que la orden queda</tspan><tspan x="950" dy="19.5">cerrada</tspan></text>
+  <polygon points="1420,1068.0 1590.0,1130 1420,1192.0 1250.0,1130" fill="#FCEFD6" stroke="#D98A0B" stroke-width="2"/>
+  <text x="1420" y="1134.9" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#14191C" text-anchor="middle"><tspan x="1420" dy="0">¿Confirma?</tspan></text>
+  <rect x="330.0" y="1250.0" width="300" height="70" rx="8" fill="#FFF3EA" stroke="#E46715" stroke-width="2"/>
+  <text x="480" y="1290.25" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">Enviar el cambio al servidor</tspan></text>
+  <polygon points="480,1373.0 650.0,1435 480,1497.0 310.0,1435" fill="#FCEFD6" stroke="#D98A0B" stroke-width="2"/>
+  <text x="480" y="1439.9" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">¿Qué responde la API?</tspan></text>
+  <rect x="800.0" y="1400.0" width="300" height="70" rx="8" fill="#DBF1E3" stroke="#1E9150" stroke-width="2"/>
+  <text x="950" y="1430.5" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="950" dy="0">Aviso de éxito. Se muestra la</tspan><tspan x="950" dy="19.5">orden actualizada y su historial</tspan></text>
+  <rect x="1270.0" y="1400.0" width="300" height="70" rx="8" fill="#E4EAF5" stroke="#01225E" stroke-width="2"/>
+  <text x="1420" y="1430.5" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="1420" dy="0">Opcional: copiar el link de</tspan><tspan x="1420" dy="19.5">seguimiento para el cliente</tspan></text>
+  <rect x="1715.0" y="1407.0" width="170" height="56" rx="28.0" fill="#01225E" stroke="none" stroke-width="1"/>
+  <text x="1800" y="1440.25" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle"><tspan x="1800" dy="0">Fin</tspan></text>
+  <rect x="330.0" y="1535.0" width="300" height="70" rx="8" fill="#FBE1E1" stroke="#D02A31" stroke-width="2"/>
+  <text x="480" y="1565.5" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="480" dy="0">Aviso con el mensaje de la API. El</tspan><tspan x="480" dy="19.5">estado no cambia</tspan></text>
+  <rect x="40.0" y="1387.0" width="240" height="96" rx="8" fill="#FBE1E1" stroke="#D02A31" stroke-width="2"/>
+  <text x="160" y="1411.0" font-family="Inter, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#14191C" text-anchor="middle"><tspan x="160" dy="0">Se borra la sesión y</tspan><tspan x="160" dy="19.5">se vuelve al login con</tspan><tspan x="160" dy="19.5">el aviso «Tu sesión</tspan><tspan x="160" dy="19.5">expiró»</tspan></text>
+  <circle cx="160" cy="1526" r="22" fill="#FFFFFF" stroke="#01225E" stroke-width="2"/>
+  <text x="160" y="1532" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#01225E" text-anchor="middle"><tspan x="160" dy="0">A</tspan></text>
+  <circle cx="950" cy="170" r="22" fill="#FFFFFF" stroke="#01225E" stroke-width="2"/>
+  <text x="950" y="176" font-family="Inter, Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#01225E" text-anchor="middle"><tspan x="950" dy="0">A</tspan></text>
+  <polyline points="480,158 480,213" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,213 484.5,204.0 475.5,204.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="490" y="208" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="490" dy="0"></tspan></text>
+  <polyline points="650,275 800,275" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="800,275 791.0,270.5 791.0,279.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="730" y="265" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="730" dy="0">No</tspan></text>
+  <polyline points="480,337 480,410" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,410 484.5,401.0 475.5,401.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="490" y="378" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="490" dy="0">Sí</tspan></text>
+  <polyline points="950,310 950,383" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="950,383 954.5,374.0 945.5,374.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="780,445 630,445" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="630,445 639.0,449.5 639.0,440.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="730" y="435" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="730" dy="0">Sí</tspan></text>
+  <polyline points="1120,445 1270,445" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="1270,445 1261.0,440.5 1261.0,449.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="1145" y="435" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="1145" dy="0">No</tspan></text>
+  <polyline points="1420,410 1420,275 1100,275" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="1100,275 1109.0,279.5 1109.0,270.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="480,480 480,545" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,545 484.5,536.0 475.5,536.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="480,615 480,665" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,665 484.5,656.0 475.5,656.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="480,735 480,783" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,783 484.5,774.0 475.5,774.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="650,845 800,845" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="800,845 791.0,840.5 791.0,849.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="705" y="835" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="705" dy="0">No</tspan></text>
+  <polyline points="950,880 950,957" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="950,957 954.5,948.0 945.5,948.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="480,907 480,955" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,955 484.5,946.0 475.5,946.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="490" y="938" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="490" dy="0">Sí</tspan></text>
+  <polyline points="480,1025 480,1068" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,1068 484.5,1059.0 475.5,1059.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="650,1130 800,1130" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="800,1130 791.0,1125.5 791.0,1134.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="705" y="1120" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="705" dy="0">Sí</tspan></text>
+  <polyline points="1100,1130 1250,1130" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="1250,1130 1241.0,1125.5 1241.0,1134.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="1420,1068 1420,700 630,700" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="630,700 639.0,704.5 639.0,695.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="1432" y="1060" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="1432" dy="0">No: vuelve al detalle</tspan></text>
+  <polyline points="480,1192 480,1250" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,1250 484.5,1241.0 475.5,1241.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="490" y="1225" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="490" dy="0">No</tspan></text>
+  <polyline points="1420,1192 1420,1285 630,1285" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="630,1285 639.0,1289.5 639.0,1280.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="1432" y="1220" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="1432" dy="0">Sí</tspan></text>
+  <polyline points="480,1320 480,1373" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,1373 484.5,1364.0 475.5,1364.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="650,1435 800,1435" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="800,1435 791.0,1430.5 791.0,1439.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="660" y="1425" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="660" dy="0">Éxito (200)</tspan></text>
+  <polyline points="1100,1435 1270,1435" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="1270,1435 1261.0,1430.5 1261.0,1439.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="1570,1435 1715,1435" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="1715,1435 1706.0,1430.5 1706.0,1439.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="480,1497 480,1535" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="480,1535 484.5,1526.0 475.5,1526.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="490" y="1520" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="490" dy="0">Transición inválida (422)</tspan></text>
+  <polyline points="310,1435 280,1435" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="280,1435 289.0,1439.5 289.0,1430.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="286" y="1420" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="286" dy="0">401</tspan></text>
+  <polyline points="160,1483 160,1503" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="160,1503 164.5,1494.0 155.5,1494.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <polyline points="330,1570 18,1570 18,990 330,990" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="330,990 321.0,985.5 321.0,994.5" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <text x="28" y="1250" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5A6167" text-anchor="start"><tspan x="28" dy="0">Vuelve a elegir</tspan></text>
+  <polyline points="950,192 950,240" fill="none" stroke="#3A4147" stroke-width="1.8" stroke-linejoin="round"/>
+  <polygon points="950,240 954.5,231.0 945.5,231.0" fill="#3A4147" stroke="none" stroke-width="1"/>
+  <rect x="1500" y="40" width="440" height="190" rx="10" fill="#F4F2EE" stroke="#DEDAD3" stroke-width="1"/>
+  <text x="1520" y="70" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#01225E" text-anchor="start"><tspan x="1520" dy="0">Referencias</tspan></text>
+  <rect x="1520" y="94" width="28" height="24" rx="12" fill="#01225E" stroke="#01225E" stroke-width="2"/>
+  <text x="1558" y="111" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="1558" dy="0">Inicio o fin</tspan></text>
+  <rect x="1520" y="134" width="28" height="24" rx="4" fill="#E4EAF5" stroke="#01225E" stroke-width="2"/>
+  <text x="1558" y="151" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="1558" dy="0">Pantalla o paso del usuario</tspan></text>
+  <rect x="1520" y="174" width="28" height="24" rx="4" fill="#FFF3EA" stroke="#E46715" stroke-width="2"/>
+  <text x="1558" y="191" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="1558" dy="0">Acción del sistema</tspan></text>
+  <polygon points="1744,94 1758,106 1744,118 1730,106" fill="#FCEFD6" stroke="#D98A0B" stroke-width="2"/>
+  <text x="1768" y="111" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="1768" dy="0">Decisión</tspan></text>
+  <rect x="1730" y="134" width="28" height="24" rx="4" fill="#FBE1E1" stroke="#D02A31" stroke-width="2"/>
+  <text x="1768" y="151" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="1768" dy="0">Error o aviso</tspan></text>
+  <rect x="1730" y="174" width="28" height="24" rx="4" fill="#DBF1E3" stroke="#1E9150" stroke-width="2"/>
+  <text x="1768" y="191" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="1768" dy="0">Éxito</tspan></text>
+  <text x="1520" y="216" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#5A6167" text-anchor="start"><tspan x="1520" dy="0">A: conector, continúa en el login</tspan></text>
+</svg>

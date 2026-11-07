@@ -27,7 +27,7 @@
 
 - [x] 5.1 Escribir el README: cómo instalar y ejecutar, usuario de demo, descripción de cada endpoint con ejemplo de petición y respuesta, declaración de que los datos son simulados en memoria, explicación de la persistencia con PostgreSQL y TypeORM (entidades e índices) y lista de lo que falta para pasar a producción. Verificación: seguir el README desde cero en una carpeta limpia y ejecutar un cambio de estado con `curl`.
 - [x] 5.2 Ejecutar `npm run typecheck`, `npm run lint`, `npm test` y `openspec validate work-order-status-api`. Verificación: los cuatro terminan sin errores.
-- [ ] 5.3 Revisar con `/code-review` lo implementado. Verificación: sin hallazgos de severidad alta sin resolver.
+- [x] 5.3 Revisar con `/code-review` lo implementado. Verificación: sin hallazgos de severidad alta sin resolver.
 
 ## Workflow follow-up
 

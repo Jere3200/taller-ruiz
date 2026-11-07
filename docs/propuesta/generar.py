@@ -72,6 +72,13 @@ def ars(value):
     return f"${texto}"
 
 
+def monto(valor):
+    """Importe en la moneda de datos.json: USD 2.060 o $2.060."""
+    if DATOS["moneda"] == "USD":
+        return "USD " + f"{valor:,.0f}".replace(",", ".")
+    return ars(valor)
+
+
 def tabla(filas, anchos, cabecera=True, zebra=True, extra=()):
     datos = []
     for i, fila in enumerate(filas):
@@ -276,6 +283,7 @@ def portada(canvas, doc):
 def construir():
     moneda = DATOS["moneda"]
     vh = DATOS.get("valor_hora")
+    vh_m = DATOS.get("valor_hora_mantenimiento") or vh
 
     doc = BaseDocTemplate(
         str(SALIDA),
@@ -408,7 +416,7 @@ def construir():
                     "<b>Se implementó como prueba de concepto</b>",
                     "API con Node.js, TypeScript y Express: consulta y cambio de estado de órdenes con la regla de transiciones "
                     "válidas, ingreso con token, seguimiento público sin datos personales y límite de intentos (87 tests). Front "
-                    "con Next.js: landing, seguimiento, ingreso, tablero y detalle (72 tests). Los datos son de ejemplo y están "
+                    "con Next.js: landing, seguimiento, ingreso, tablero y detalle (82 tests). Los datos son de ejemplo y están "
                     "en memoria.",
                 ],
                 [
@@ -584,18 +592,32 @@ def construir():
     for nombre, bajo, alto in tareas:
         fila = [nombre, f"{bajo} a {alto}"]
         if vh:
-            fila.append(f"{ars(bajo * vh)} a {ars(alto * vh)}")
+            fila.append(f"{monto(bajo * vh)} a {monto(alto * vh)}")
         filas.append(fila)
     total = [f"<b>Total del MVP</b>", f"<b>{total_bajo} a {total_alto}</b>"]
     if vh:
-        total.append(f"<b>{ars(total_bajo * vh)} a {ars(total_alto * vh)}</b>")
+        total.append(f"<b>{monto(total_bajo * vh)} a {monto(total_alto * vh)}</b>")
     filas.append(total)
     anchos = [CONTENT_W - 28 * mm, 28 * mm] if not vh else [CONTENT_W - 28 * mm - 50 * mm, 28 * mm, 50 * mm]
     h.append(tabla(filas, anchos))
     h.append(Spacer(1, 2))
     if vh:
         justificacion = DATOS.get("valor_hora_justificacion") or "sin justificación cargada"
-        h.append(p(f"<b>Valor hora de referencia:</b> {ars(vh)} {moneda}. {justificacion}"))
+        h.append(p(f"<b>Valor hora de referencia:</b> {monto(vh)}. {justificacion}", SMALL))
+        cot = DATOS.get("cotizacion")
+        if cot and moneda == "USD":
+            f = cot["valor"]
+            h.append(
+                p(
+                    f"<b>Equivalencia en pesos</b> al dólar oficial vendedor de {ars(f)} ({cot['fecha']}, {cot['fuente']}): "
+                    f"el MVP equivale a {ars(total_bajo * vh * f)} a {ars(total_alto * vh * f)} y el mantenimiento a "
+                    f"{ars(4 * vh_m * f)} a {ars(8 * vh_m * f)} por mes. La cotización cambia.",
+                    SMALL,
+                )
+            )
+        if vh_m != vh:
+            justificacion_m = DATOS.get("valor_hora_mantenimiento_justificacion") or "sin justificación cargada"
+            h.append(p(f"<b>Valor hora para el mantenimiento:</b> {ars(vh_m)} {moneda}. {justificacion_m}", SMALL))
     else:
         h.append(
             p(
@@ -612,7 +634,7 @@ def construir():
         )
     )
     h.append(p("Costos recurrentes y quién presta cada servicio", H2))
-    mantenimiento = "4 a 8 horas por mes × valor hora" if not vh else f"{ars(4 * vh)} a {ars(8 * vh)} por mes (4 a 8 horas)"
+    mantenimiento = "4 a 8 horas por mes × valor hora" if not vh else f"{monto(4 * vh_m)} a {monto(8 * vh_m)} por mes (4 a 8 horas)"
     h.append(
         tabla(
             [
@@ -665,7 +687,7 @@ def construir():
             [
                 "Confirmar por escrito con DonWeb cuánto dura el descuento del 55 % y cuál es el precio de renovación.",
                 "Cotizar las copias diarias y verificar la disponibilidad del dominio y la delegación del DNS en NIC Argentina.",
-                "Fijar el valor hora de referencia y revisar con el cliente las horas estimadas.",
+                "Revisar con el cliente las horas estimadas y el valor hora de referencia.",
             ]
         )
     )
