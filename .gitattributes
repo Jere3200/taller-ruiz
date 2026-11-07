@@ -1,0 +1,2 @@
+# Git must never touch line endings of generated documents.
+*.pdf binary
