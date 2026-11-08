@@ -17,3 +17,6 @@ docs/diapositivas/vista-previa/
 *.log
 .DS_Store
 Thumbs.db
+
+# Paquete de entrega (copias de docs/)
+entrega/
