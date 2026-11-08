@@ -14,6 +14,7 @@ Los clientes consultan el estado de su vehículo con un código de seguimiento, 
 | [`web/`](web/README.md) | Front con Next.js: landing, seguimiento, login, panel y detalle de la orden |
 | [`openspec/`](openspec/) | Especificaciones, diseño y tareas de cada cambio, escritas antes del código |
 | `Taller Ruiz.html` | Diseño de la interfaz exportado de Claude Design |
+| [`docs/ux/`](docs/ux/README.md) | UX/UI: persona, user flow, wireframe y justificación, también en [Figma](https://www.figma.com/design/FUW1FnMtCgUGFZMrJsvhKE) |
 
 ## Cómo ejecutarlo
 

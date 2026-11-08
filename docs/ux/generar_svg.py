@@ -284,8 +284,8 @@ def wireframe():
     G1, G2, G3, G4 = "#F5F5F5", "#E6E6E6", "#BDBDBD", "#8A8A8A"
     T = "#333333"
 
-    c.texto(40, 40, "Wireframe de baja fidelidad: tablero de órdenes (tablet o computadora)", 22, "700", T)
-    c.texto(40, 66, "Pantalla principal del empleado. Los números naranjas se explican abajo y en la justificación.", 13, "400", "#666666")
+    c.texto(40, 40, "Wireframe detallado: tablero de órdenes (tablet o computadora)", 22, "700", T)
+    c.texto(40, 66, "Versión con más detalle de la pantalla 1. Los números naranjas se explican abajo y en la justificación.", 13, "400", "#666666")
 
     ox, oy, aw, ah = 40, 90, 1320, 700
     c.rect(ox, oy, aw, ah, fill="#FFFFFF", stroke=G4, rx=6, sw=2)
@@ -402,7 +402,7 @@ def justificacion():
             "Facilidad de uso",
             [
                 "Botones y campos grandes, pensados para una tablet usada en el taller, con las manos sucias.",
-                "La búsqueda por patente (3 en el wireframe) responde a lo que el empleado tiene a mano frente al vehículo.",
+                "La búsqueda por patente (3 en el wireframe detallado) responde a lo que el empleado tiene a mano frente al vehículo.",
                 "Los botones dicen lo que pasa, con las palabras del taller: «Pasar a En reparación», no «Actualizar registro».",
                 "Desde el tablero se llega al cambio en tres pasos: abrir la orden, elegir el estado y, si hace falta, confirmar.",
             ],

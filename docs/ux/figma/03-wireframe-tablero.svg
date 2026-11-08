@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1040" viewBox="0 0 1400 1040">
   <rect width="1400" height="1040" fill="#FFFFFF"/>
-  <text x="40" y="40" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#333333" text-anchor="start"><tspan x="40" dy="0">Wireframe de baja fidelidad: tablero de órdenes (tablet o computadora)</tspan></text>
-  <text x="40" y="66" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#666666" text-anchor="start"><tspan x="40" dy="0">Pantalla principal del empleado. Los números naranjas se explican abajo y en la justificación.</tspan></text>
+  <text x="40" y="40" font-family="Inter, Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#333333" text-anchor="start"><tspan x="40" dy="0">Wireframe detallado: tablero de órdenes (tablet o computadora)</tspan></text>
+  <text x="40" y="66" font-family="Inter, Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#666666" text-anchor="start"><tspan x="40" dy="0">Versión con más detalle de la pantalla 1. Los números naranjas se explican abajo y en la justificación.</tspan></text>
   <rect x="40" y="90" width="1320" height="700" rx="6" fill="#FFFFFF" stroke="#8A8A8A" stroke-width="2"/>
   <rect x="40" y="90" width="210" height="700" rx="0" fill="#E6E6E6" stroke="#8A8A8A" stroke-width="1"/>
   <rect x="60" y="110" width="170" height="44" rx="0" fill="#BDBDBD" stroke="#8A8A8A" stroke-width="1"/>

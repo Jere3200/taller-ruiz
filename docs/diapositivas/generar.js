@@ -255,7 +255,7 @@ const pie = (api, presenta) => api.texto(`Presenta: ${presenta}`, 0.6, 6.98, 6, 
   const s = nueva("CLARA", "UX/UI: persona, flujo y wireframe", JERE,
     `Elegimos como funcionalidad principal cambiar el estado de una orden de trabajo. Diseñamos para Luciano Gómez, un mecánico encargado de 38 años que pasa el día de pie, con las manos sucias, y usa más el celular y la tablet que la computadora. Es una persona ficticia, armada con supuestos: la validaríamos con los empleados reales.\n\nEl user flow tiene seis decisiones, entre ellas si hay sesión iniciada, si el estado tiene siguientes y si el empleado confirma cuando cancela o entrega. A la derecha ven el wireframe del tablero: un resumen arriba, búsqueda por patente, y una columna por cada estado del proceso real del taller.\n\nPensamos en tres cosas: facilidad de uso con botones grandes y palabras del taller, información organizada como el proceso, y prevención de errores: solo se ofrecen los estados válidos y se pide confirmación al cerrar una orden.`);
   s.imagen("wireframe-tablero.png", 0.6, 1.5, 8.0, 4.3);
-  s.texto("Wireframe de baja fidelidad del tablero de órdenes", 0.6, 5.82, 8.0, 0.32, { size: 12, color: C.muted });
+  s.texto("Wireframe detallado del tablero de órdenes", 0.6, 5.82, 8.0, 0.32, { size: 12, color: C.muted });
   s.texto("1 Navegación, 2 Resumen por etapa, 3 Búsqueda y filtro, 4 Vista en columnas o tabla, 5 Columna por estado, 6 Tarjeta de la orden", 0.6, 6.15, 8.0, 0.65, { size: 13, color: C.ink });
   s.rect(8.9, 1.5, 3.83, 1.55, { fill: C.paper, radius: 0.1 });
   s.texto([

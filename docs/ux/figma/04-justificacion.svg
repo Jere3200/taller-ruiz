@@ -10,7 +10,7 @@
   <circle cx="78" cy="207" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
   <text x="94" y="212" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Botones y campos grandes, pensados para una tablet usada en el taller, con las manos sucias.</tspan></text>
   <circle cx="78" cy="238" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
-  <text x="94" y="243" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">La búsqueda por patente (3 en el wireframe) responde a lo que el empleado tiene a mano frente al vehículo.</tspan></text>
+  <text x="94" y="243" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">La búsqueda por patente (3 en el wireframe detallado) responde a lo que el empleado tiene a mano frente al vehículo.</tspan></text>
   <circle cx="78" cy="269" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
   <text x="94" y="274" font-family="Inter, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#14191C" text-anchor="start"><tspan x="94" dy="0">Los botones dicen lo que pasa, con las palabras del taller: «Pasar a En reparación», no «Actualizar registro».</tspan></text>
   <circle cx="78" cy="300" r="4" fill="#E46715" stroke="none" stroke-width="1"/>
