@@ -47,18 +47,18 @@ Notas:
 
 ## 2. Costos de implementación
 
-Estimación de esfuerzo del grupo para pasar de la prueba de concepto al sistema completo. Son rangos de horas y deben revisarse con el cliente.
+Estimación de esfuerzo del grupo para pasar de la prueba de concepto al MVP: **75 horas**. Parte de lo ya hecho en la prueba de concepto (la regla de estados, el seguimiento público, el ingreso y las pantallas del tablero y del detalle, con sus pruebas), así que las horas cubren lo que falta. Debe revisarse con el cliente.
 
 | Tarea | Horas |
 |---|---|
-| Relevamiento final y diseño de interfaz completo | 16 a 24 |
-| API completa: clientes, vehículos, órdenes, registro de repuestos, usuarios y roles, con PostgreSQL, TypeORM y migraciones | 70 a 100 |
-| Front completo: tablero, alta y edición de órdenes, clientes y repuestos | 50 a 70 |
-| Autenticación real: contraseñas con hash, roles, expiración y recuperación | 16 a 24 |
-| Pruebas unitarias, de integración y end to end, y correcciones | 30 a 40 |
-| Infraestructura y puesta en producción: servidor, Docker, HTTPS, copias y despliegue | 16 a 24 |
-| Capacitación al personal y documentación | 8 a 12 |
-| **Total del MVP** | **206 a 294** |
+| Relevamiento final y ajustes de la interfaz | 6 |
+| API con PostgreSQL, TypeORM y migraciones: alta y edición de órdenes, clientes y repuestos | 24 |
+| Front: alta y edición de órdenes, clientes y repuestos | 16 |
+| Autenticación real: usuarios en la base, contraseñas con hash y roles | 6 |
+| Pruebas de lo nuevo y correcciones | 10 |
+| Infraestructura y puesta en producción: servidor, Docker, HTTPS, copias y despliegue | 9 |
+| Capacitación al personal y documentación | 4 |
+| **Total del MVP** | **75** |
 
 Segunda etapa, que no está en el MVP:
 
@@ -74,7 +74,7 @@ Segunda etapa, que no está en el MVP:
 - El Consejo Profesional de Ciencias Informáticas de La Rioja ([tabla de abril de 2026](https://cpcilar.org.ar/wp-content/uploads/2026/05/TablaHonorariosAbril2026-3.pdf)) sugiere como mínimo $90.777 por hora para programación de páginas web y $99.205 para administración de sistemas. Al dólar oficial vendedor de $1.570 son unos USD 58 y USD 63.
 - El Colegio de Profesionales de Ciencias Informáticas de San Juan publica, sin fecha, $70.000 por hora para un desarrollador Full Stack ([fuente](https://cpci.com.ar/Honorarios.html)).
 
-Costo del MVP: de **USD 2.060 a USD 2.940** (206 a 294 horas). Cotización de referencia: dólar oficial vendedor de $1.570 el 5 de noviembre de 2026 ([dolarapi.com](https://dolarapi.com/v1/dolares/oficial)), que equivale a $3.234.200 a $4.615.800. Cambia todos los días: la infraestructura está cotizada en pesos y la mano de obra en dólares.
+Costo del MVP: **USD 750** (75 horas). Cotización de referencia: dólar oficial vendedor de $1.570 el 5 de noviembre de 2026 ([dolarapi.com](https://dolarapi.com/v1/dolares/oficial)), que equivale a $1.177.500. Cambia todos los días: la infraestructura está cotizada en pesos y la mano de obra en dólares.
 
 ## 3. Costos recurrentes
 

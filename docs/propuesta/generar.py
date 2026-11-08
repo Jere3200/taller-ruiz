@@ -575,28 +575,27 @@ def construir():
             f"{ars((lista * 12 + dominio) / 12)} por mes), sin las copias diarias."
         )
     )
-    h.append(p("Costos de implementación (estimación de esfuerzo)", H2))
+    h.append(p("Costos de implementación (lo que falta después de la prueba de concepto)", H2))
     tareas = [
-        ("Relevamiento final y diseño de interfaz completo", 16, 24),
-        ("API completa con PostgreSQL, TypeORM, migraciones, roles y repuestos", 70, 100),
-        ("Front completo: tablero, alta y edición de órdenes, clientes y repuestos", 50, 70),
-        ("Autenticación real: contraseñas con hash, roles, expiración y recuperación", 16, 24),
-        ("Pruebas unitarias, de integración y end to end, y correcciones", 30, 40),
-        ("Infraestructura y puesta en producción: servidor, Docker, HTTPS y copias", 16, 24),
-        ("Capacitación al personal y documentación", 8, 12),
+        ("Relevamiento final y ajustes de la interfaz", 6),
+        ("API con PostgreSQL y TypeORM: órdenes, clientes y repuestos", 24),
+        ("Front: alta y edición de órdenes, clientes y repuestos", 16),
+        ("Autenticación real: usuarios en la base, contraseñas con hash y roles", 6),
+        ("Pruebas de lo nuevo y correcciones", 10),
+        ("Infraestructura y puesta en producción: servidor, Docker, HTTPS y copias", 9),
+        ("Capacitación al personal y documentación", 4),
     ]
-    total_bajo = sum(t[1] for t in tareas)
-    total_alto = sum(t[2] for t in tareas)
+    total_horas = sum(t[1] for t in tareas)
     encabezado = ["Tarea", "Horas"] + ([f"Costo ({moneda})"] if vh else [])
     filas = [encabezado]
-    for nombre, bajo, alto in tareas:
-        fila = [nombre, f"{bajo} a {alto}"]
+    for nombre, horas in tareas:
+        fila = [nombre, str(horas)]
         if vh:
-            fila.append(f"{monto(bajo * vh)} a {monto(alto * vh)}")
+            fila.append(monto(horas * vh))
         filas.append(fila)
-    total = [f"<b>Total del MVP</b>", f"<b>{total_bajo} a {total_alto}</b>"]
+    total = [f"<b>Total del MVP</b>", f"<b>{total_horas}</b>"]
     if vh:
-        total.append(f"<b>{monto(total_bajo * vh)} a {monto(total_alto * vh)}</b>")
+        total.append(f"<b>{monto(total_horas * vh)}</b>")
     filas.append(total)
     anchos = [CONTENT_W - 28 * mm, 28 * mm] if not vh else [CONTENT_W - 28 * mm - 50 * mm, 28 * mm, 50 * mm]
     h.append(tabla(filas, anchos))
@@ -610,7 +609,7 @@ def construir():
             h.append(
                 p(
                     f"<b>Equivalencia en pesos</b> al dólar oficial vendedor de {ars(f)} ({cot['fecha']}, {cot['fuente']}): "
-                    f"el MVP equivale a {ars(total_bajo * vh * f)} a {ars(total_alto * vh * f)} y el mantenimiento a "
+                    f"el MVP equivale a {ars(total_horas * vh * f)} y el mantenimiento a "
                     f"{ars(4 * vh_m * f)} a {ars(8 * vh_m * f)} por mes. La cotización cambia.",
                     SMALL,
                 )
