@@ -23,7 +23,7 @@ Lo interactivo, diapositiva por diapositiva:
 4. Simulador de la máquina de estados: un salto inválido responde 422 y la orden no cambia. Pestañas con capturas del tablero y del detalle.
 5. Tres pestañas con los tipos de prueba y su código.
 6. Arquitectura: cada componente se puede tocar, y el flujo está animado. Tabla comparativa de proveedores.
-7. Presupuesto: descuento o precio de lista, y un deslizador de horas de mantenimiento que recalcula en dólares y en pesos.
+7. Presupuesto: pago anual o mensual del servidor, y un deslizador de horas de mantenimiento que recalcula en dólares y en pesos.
 8. Seis tarjetas de imprevistos que se dan vuelta con la respuesta.
 
 ## Quién presenta qué

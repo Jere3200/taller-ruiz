@@ -8,8 +8,8 @@
   ],
   "fecha": "noviembre de 2026",
   "moneda": "USD",
-  "valor_hora": 10,
-  "valor_hora_justificacion": "Referencia fijada por el grupo para un equipo en formación, menor que el mínimo sugerido por el Consejo de Ciencias Informáticas de La Rioja para programación web (abril de 2026: $90.777 por hora, unos USD 58). Se aplica también al mantenimiento.",
+  "valor_hora": 20,
+  "valor_hora_justificacion": "(desarrollador junior freelance en Argentina: USD 15 a 25), menor que el mínimo sugerido por el Consejo de Ciencias Informáticas de La Rioja para programación web (abril de 2026: $90.777 por hora, unos USD 58). Se aplica también al mantenimiento.",
   "valor_hora_mantenimiento": null,
   "valor_hora_mantenimiento_justificacion": null,
   "cotizacion": {

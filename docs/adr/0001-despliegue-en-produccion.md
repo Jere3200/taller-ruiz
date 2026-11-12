@@ -1,6 +1,6 @@
 # ADR 0001: Despliegue en producción
 
-Estado: propuesto. Fecha de la investigación: 6 de noviembre de 2026.
+Estado: propuesto. Fecha de la investigación: 6 de noviembre de 2026, con los precios de DonWeb actualizados el 12 de noviembre.
 
 ## Contexto
 
@@ -25,8 +25,8 @@ La aplicación se compone de un front en Next.js, una API en Express con TypeScr
 | Criterio | A. Administrado y base externa | B. VPS (DonWeb o Hostinger) |
 |---|---|---|
 | Compatibilidad | Falta PostgreSQL en el hosting: Hostinger solo menciona MySQL. Hay que sumar Supabase | Compatible: con root se instalan Node, Docker y PostgreSQL |
-| Costo inicial | Hostinger exige pagar 48 meses por adelantado (ARS 772.752) para el precio promocional | DonWeb cobra por mes. Hostinger KVM 2 exige 24 meses por adelantado (ARS 415.176) |
-| Costo recurrente | Hostinger renueva a ARS 52.299 por mes, más USD 25 por mes de Supabase Pro | DonWeb: ARS 10.966,87 por mes promocional. Hostinger renueva a ARS 31.399 por mes |
+| Costo inicial | Hostinger exige pagar 48 meses por adelantado (ARS 772.752) para el precio promocional | DonWeb cobra mes a mes, o un año por adelantado con 36 % menos. Hostinger KVM 2 exige 24 meses por adelantado (ARS 415.176) |
+| Costo recurrente | Hostinger renueva a ARS 52.299 por mes, más USD 25 por mes de Supabase Pro | DonWeb: ARS 18.149 por mes, o ARS 140.010 por año (ARS 11.667,50 por mes). Hostinger renueva a ARS 31.399 por mes |
 | Facilidad | Alta para el cliente, pero con dos proveedores y dos monedas | Más trabajo de armado, que hace la consultora una sola vez |
 | Mantenimiento | El proveedor mantiene la plataforma; la base la mantiene Supabase | Lo hace la consultora: parches, backups, monitoreo y TLS |
 | Seguridad | Buena base, pero los datos de clientes quedan repartidos en dos proveedores, y no se verificó en qué país está cada uno | Control total: firewall, SSH por clave, base sin exposición a Internet |
@@ -40,7 +40,7 @@ Se recomienda la opción **B con DonWeb Cloud Server**, plan de 4 vCPU, 4 GB de 
 Razones:
 
 1. Es la única opción que incluye PostgreSQL sin sumar otro proveedor ni pagar en dólares.
-2. Se factura por mes y en pesos, sin pago adelantado de 24 o 48 meses, lo que encaja con un presupuesto mensual reducido.
+2. Se factura en pesos, por mes o por año, sin pago adelantado de 24 o 48 meses, lo que encaja con un presupuesto mensual reducido. Se recomienda el pago anual, que cuesta 36 % menos que el mensual.
 3. Los servidores están en Argentina, lo que reduce la latencia para los clientes y los empleados.
 4. Incluye root, copias semanales automáticas y hasta dos snapshots sin cargo. Las copias diarias son un adicional pago.
 
@@ -67,7 +67,7 @@ El precio del servidor cubre el hardware y la red. Con un VPS, el sistema operat
 
 ## Lo que no se pudo verificar
 
-- **DonWeb no publica cuánto dura el descuento del 55 % ni el precio de renovación.** El presupuesto muestra el caso con descuento y el caso de precio de lista como peor escenario. Hay que confirmarlo por escrito antes de contratar.
+- **DonWeb no publica el precio de renovación del pago anual con descuento.** El presupuesto muestra el pago anual y el pago mes a mes, que es el más caro. Hay que confirmarlo por escrito antes de contratar.
 - **El precio de las copias diarias de DonWeb no figura en su sitio.** Hay que cotizarlo.
 - **DonWeb no lista PostgreSQL en la imagen de Node.js.** Con root se puede instalar, pero no hay una imagen oficial que lo traiga; su imagen de Supabase sí lo incluye.
 - **No se verificó en las páginas consultadas las versiones de Node.js** que ofrecen DonWeb y Hostinger. Con Docker no importa, porque la versión viaja en la imagen.

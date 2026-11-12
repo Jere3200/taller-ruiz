@@ -478,7 +478,7 @@ def construir():
     h.append(p("5. Comparación de proveedores", H1))
     h.append(
         p(
-            "Precios consultados el <b>6 de noviembre de 2026</b> en las páginas oficiales de cada proveedor, en pesos "
+            "Precios consultados el <b>6 de noviembre de 2026</b> (DonWeb, 12/11) en los sitios oficiales, en pesos "
             "argentinos. Se compararon dos alternativas viables:"
         )
     )
@@ -500,12 +500,12 @@ def construir():
                 [
                     "<b>Costo inicial</b>",
                     "$772.752 por 48 meses por adelantado para el precio promocional",
-                    "DonWeb: se paga por mes. Hostinger KVM 2: $415.176 por 24 meses por adelantado",
+                    "DonWeb: mes a mes, o un año por adelantado (36 % menos que mes a mes). KVM 2: $415.176 por 24 meses",
                 ],
                 [
                     "<b>Costo recurrente</b>",
                     "Renueva a $52.299 por mes, más USD 25 por mes de Supabase Pro",
-                    "DonWeb: $10.966,87 por mes con descuento, $24.370,80 a precio de lista. KVM 2 renueva a $31.399",
+                    "DonWeb: $18.149 por mes, o $140.010 por año (equivale a $11.667,50 por mes). KVM 2 renueva a $31.399",
                 ],
                 [
                     "<b>Facilidad</b>",
@@ -530,8 +530,8 @@ def construir():
                 [
                     "<b>Limitaciones y riesgos</b>",
                     "El plan gratuito de Supabase se pausa tras una semana sin uso y no tiene copias; hay que usar el de pago",
-                    "Si nadie mantiene el servidor queda desactualizado y sin respaldo. DonWeb no publica la duración del descuento "
-                    "ni el precio de renovación",
+                    "Si nadie mantiene el servidor queda desactualizado y sin respaldo. DonWeb no publica el precio de renovación "
+                    "del pago anual con descuento",
                 ],
             ],
             [27 * mm, (CONTENT_W - 27 * mm) / 2, (CONTENT_W - 27 * mm) / 2],
@@ -542,7 +542,7 @@ def construir():
         KeepTogether(
         p(
             "Fuentes: donweb.com/es-ar (Cloud Servers y Node.js), hostinger.com/ar (hosting Node.js y VPS), supabase.com/pricing, "
-            "nic.ar/es/dominios/aranceles y cloudflare.com/plans, consultadas el 6/11/2026. Se descartó el hosting compartido: "
+            "nic.ar/es/dominios/aranceles y cloudflare.com/plans, 6/11/2026 (DonWeb 12/11). Se descartó el hosting compartido: "
             "DonWeb no documenta soporte de Node.js ni PostgreSQL en esos planes y el Unlimited de Hostinger menciona solo MySQL.",
             SMALL,
         )
@@ -552,13 +552,13 @@ def construir():
     # 6. Presupuesto
     h.append(p("6. Presupuesto y mantenimiento", H1))
     h.append(p("Costos de infraestructura (opción B recomendada)", H2))
-    promo, lista, dominio = 10966.87, 24370.80, 8500
+    anual, mensual, dominio = 140010, 18149, 8500
     h.append(
         tabla(
             [
                 ["Concepto", "Precio", "Condiciones"],
-                ["Cloud Server con descuento", f"{ars(promo)} por mes", "IVA incluido; no se publica cuánto dura el descuento"],
-                ["Cloud Server a precio de lista", f"{ars(lista)} por mes", "Caso más desfavorable"],
+                ["Cloud Server, pago anual", f"{ars(anual)} por año", "36 % menos que pagar mes a mes (DonWeb anuncia 55 %)"],
+                ["Cloud Server, pago mensual", f"{ars(mensual)} por mes", "Sin adelanto; es la opción más cara"],
                 ["Copias semanales y dos snapshots", "Incluidos", "Los snapshots se borran a los 28 días"],
                 ["Copias diarias de DonWeb", "A cotizar", "Adicional pago, el precio no está publicado"],
                 ["Dominio .com.ar", f"{ars(dominio)} por año", "NIC Argentina; la página no indica fecha"],
@@ -570,9 +570,9 @@ def construir():
     h.append(Spacer(1, 2))
     h.append(
         p(
-            f"<b>Primer año de infraestructura:</b> {ars(promo * 12 + dominio)} con el descuento vigente (equivale a "
-            f"{ars((promo * 12 + dominio) / 12)} por mes) o {ars(lista * 12 + dominio)} a precio de lista (equivale a "
-            f"{ars((lista * 12 + dominio) / 12)} por mes), sin las copias diarias."
+            f"<b>Primer año de infraestructura:</b> {ars(anual + dominio)} con pago anual (equivale a "
+            f"{ars((anual + dominio) / 12)} por mes) o {ars(mensual * 12 + dominio)} mes a mes (equivale a "
+            f"{ars((mensual * 12 + dominio) / 12)} por mes), con el dominio incluido y sin las copias diarias."
         )
     )
     h.append(p("Costos de implementación (lo que falta después de la prueba de concepto)", H2))
@@ -602,7 +602,7 @@ def construir():
     h.append(Spacer(1, 2))
     if vh:
         justificacion = DATOS.get("valor_hora_justificacion") or "sin justificación cargada"
-        h.append(p(f"<b>Valor hora de referencia:</b> {monto(vh)}. {justificacion}", SMALL))
+        h.append(p(f"<b>Valor hora de referencia:</b> {monto(vh)} {justificacion}", SMALL))
         cot = DATOS.get("cotizacion")
         if cot and moneda == "USD":
             f = cot["valor"]
@@ -638,7 +638,7 @@ def construir():
         tabla(
             [
                 ["Concepto", "Por mes", "Lo presta"],
-                ["Servidor", f"{ars(promo)} (descuento) o {ars(lista)} (lista)", "DonWeb"],
+                ["Servidor", f"{ars(anual / 12)} (pago anual) o {ars(mensual)} (pago mensual)", "DonWeb"],
                 ["Dominio", f"{ars(dominio / 12)}", "NIC Argentina"],
                 ["DNS, CDN y certificado", "$0", "Cloudflare"],
                 ["Copias diarias", "A cotizar", "DonWeb"],
@@ -662,8 +662,8 @@ def construir():
         p(
             "Se recomienda la <b>opción B: DonWeb Cloud Server con un plan de mantenimiento de la consultora</b>, y Hostinger "
             "VPS KVM 2 como alternativa de respaldo. Es la única opción que incluye PostgreSQL sin sumar otro proveedor ni "
-            "pagar en dólares, se paga por mes sin comprometer 24 o 48 meses por adelantado, tiene los servidores en "
-            "Argentina y ofrece acceso root, copias semanales y snapshots. Encaja con un presupuesto mensual reducido y con un "
+            "pagar en dólares, se paga por mes o por año sin comprometer 24 o 48 meses por adelantado, tiene servidores en "
+            "Argentina, acceso root, copias semanales y snapshots. Encaja con un presupuesto mensual reducido y con un "
             "personal que no administra servidores, porque la administración la asume la consultora."
         )
     )
@@ -684,7 +684,7 @@ def construir():
     h.extend(
         bullets(
             [
-                "Confirmar por escrito con DonWeb cuánto dura el descuento del 55 % y cuál es el precio de renovación.",
+                "Confirmar por escrito con DonWeb el precio de renovación del pago anual, que hoy no está publicado.",
                 "Cotizar las copias diarias y verificar la disponibilidad del dominio y la delegación del DNS en NIC Argentina.",
                 "Revisar con el cliente las horas estimadas y el valor hora de referencia.",
             ]

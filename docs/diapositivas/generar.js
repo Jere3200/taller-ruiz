@@ -177,19 +177,23 @@ const pie = (api, presenta) => api.texto(`Presenta: ${presenta}`, 0.6, 6.98, 6, 
   s.dark = true;
   s.texto("PROPUESTA TÉCNICO-COMERCIAL", 0.8, 1.25, 7.4, 0.4, { size: 16, color: C.orangeSoft, bold: true });
   s.texto("Sistema de gestión de reparaciones", 0.8, 3.0, 7.4, 0.7, { size: 26, color: C.pale });
-  s.texto(`${DATOS.consultora}, Grupo 2`, 0.8, 3.85, 7.4, 0.45, { size: 20, color: C.orangeSoft, bold: true });
+  s.texto("EQUIPO, GRUPO 2", 0.8, 3.85, 7.4, 0.35, { size: 13, color: C.orangeSoft, bold: true });
   const equipo = [
     [JERE, "contexto, solución y UX"], [ADRIAN, "demostración y testing"], [RENZO, "arquitectura y despliegue"], [ROCIO, "presupuesto y cierre"],
   ];
   equipo.forEach(([nombre, rol], i) => {
-    s.texto([{ t: nombre, b: true, s: 18, c: C.white }], 0.8, 4.5 + i * 0.48, 3.6, 0.45, { size: 18 });
-    s.texto(rol, 4.2, 4.54 + i * 0.48, 4.0, 0.42, { size: 16, color: C.pale });
+    s.texto([{ t: nombre, b: true, s: 18, c: C.white }], 0.8, 4.3 + i * 0.48, 3.6, 0.45, { size: 18 });
+    s.texto(rol, 4.2, 4.34 + i * 0.48, 4.0, 0.42, { size: 16, color: C.pale });
   });
   s.texto("Segundo parcial integrador, Construcción de Sitios Web II. Tecnicatura Superior en Analista de Sistemas, IRESM Nivel Superior, 2026. Docente: María Florencia García Zavia.", 0.8, 6.65, 11.6, 0.6, { size: 13, color: "A9B9DA" });
 
+  // Quién presenta la propuesta, arriba a la derecha, frente al logo del cliente
+  s.texto("UNA PROPUESTA DE", 8.85, 0.4, 3.9, 0.32, { size: 11, color: "A9B9DA", bold: true });
+  s.imagen("logo-rumbo.png", 8.85, 0.78, 0.52 * 714 / 151, 0.52);
+
   // Ticket de ejemplo: la misma orden que se ve en el seguimiento
-  const x = 8.85, y = 1.35, w = 3.9;
-  s.rect(x, y, w, 4.95, { fill: C.paper, radius: 0.18 });
+  const x = 8.85, y = 1.65, w = 3.9;
+  s.rect(x, y, w, 4.75, { fill: C.paper, radius: 0.18 });
   s.texto("ORDEN DE TRABAJO", x + 0.3, y + 0.3, 2.2, 0.35, { size: 12, color: C.muted, bold: true });
   s.texto("TR-1042", x + 2.3, y + 0.3, 1.3, 0.35, { size: 14, color: C.ink, bold: true, align: "right" });
   s.texto("Fiat Cronos", x + 0.3, y + 0.85, 3.3, 0.7, { size: 30, color: C.navy, bold: true });
@@ -340,7 +344,9 @@ const pie = (api, presenta) => api.texto(`Presenta: ${presenta}`, 0.6, 6.98, 6, 
 // ================================================================ 6. Arquitectura y despliegue (Renzo)
 {
   const s = nueva("CLARA", "Arquitectura y despliegue", RENZO,
-    `Este es el diagrama de la aplicación completa. En trazo continuo está lo que ya implementamos en la prueba de concepto, el front en Next.js y la API en Express. En trazo punteado, lo que proponemos para producción: Cloudflare para el DNS y el certificado, Nginx, PostgreSQL con TypeORM y las copias de seguridad nocturnas.\n\nComparamos dos alternativas con precios de DonWeb y Hostinger consultados el 6 de noviembre. La opción A es un hosting Node.js administrado, pero no incluye PostgreSQL: habría que sumar Supabase y pagar 48 meses por adelantado. La opción B es un servidor virtual con Docker, donde corre todo junto. Elegimos la B con un DonWeb Cloud Server de 4 procesadores y 4 gigas de memoria, con servidores en Argentina, que se paga por mes y en pesos. Su costo es de $10.966,87 mensuales con descuento. El mantenimiento queda a cargo de la consultora.`);
+    `Este es el diagrama de la aplicación completa. En trazo continuo está lo que ya implementamos en la prueba de concepto, el front en Next.js y la API en Express. En trazo punteado, lo que proponemos para producción: Cloudflare para el DNS y el certificado, Nginx, PostgreSQL con TypeORM y las copias de seguridad nocturnas.
+
+Comparamos dos alternativas con precios de Hostinger consultados el 6 de noviembre y de DonWeb consultados el 12 de noviembre. La opción A es un hosting Node.js administrado, pero no incluye PostgreSQL: habría que sumar Supabase y pagar 48 meses por adelantado. La opción B es un servidor virtual con Docker, donde corre todo junto. Elegimos la B con un DonWeb Cloud Server de 4 procesadores y 4 gigas de memoria, con servidores en Argentina y en pesos. Se puede pagar mes a mes, 18.149 pesos, o adelantar un año por 140.010 pesos, que equivale a unos 11.700 pesos por mes: un 36 % menos. El mantenimiento queda a cargo de la consultora.`);
   const solido = (x, y, w, h, t, o = {}) => {
     s.rect(x, y, w, h, { fill: o.fill || C.white, line: C.navy, lw: 2, radius: 0.08 });
     s.texto(t, x, y, w, h, { size: 12, color: C.ink, bold: true, align: "center", valign: "middle" });
@@ -380,8 +386,8 @@ const pie = (api, presenta) => api.texto(`Presenta: ${presenta}`, 0.6, 6.98, 6, 
   s.tabla([
     ["", "A. Administrado", "B. VPS (elegida)"],
     ["PostgreSQL", "No: hay que sumar Supabase", "Sí, en el mismo servidor"],
-    ["Pago inicial", "48 meses por adelantado", "Mensual"],
-    ["Costo mensual", "$52.299 más USD 25", "$10.966,87 con descuento"],
+    ["Pago inicial", "48 meses por adelantado", "Mensual, o un año con descuento"],
+    ["Costo mensual", "$52.299 más USD 25", "$11.667,50 anual o $18.149 mensual"],
     ["Mantenimiento", "Del proveedor", "De la consultora"],
   ], 7.95, 1.6, 4.78, [1.3, 1.7, 1.78], { size: 13, rowH: 0.62 });
   s.rect(7.95, 5.0, 4.78, 1.8, { fill: C.soft, radius: 0.1 });
@@ -395,11 +401,15 @@ const pie = (api, presenta) => api.texto(`Presenta: ${presenta}`, 0.6, 6.98, 6, 
 // ================================================================ 7. Presupuesto (Rocío)
 {
   const s = nueva("CLARA", "Presupuesto y mantenimiento", ROCIO,
-    `El presupuesto separa lo que se contrata al proveedor de lo que presta la consultora, con precios de proveedores reales consultados el 6 de noviembre de 2026.\n\nLa infraestructura cuesta ciento cuarenta mil pesos el primer año con el descuento vigente, o trescientos mil a precio de lista, porque DonWeb no publica cuánto dura el descuento. La implementación del MVP son 75 horas, porque partimos de la prueba de concepto, que ya resuelve la regla de estados, el seguimiento y el ingreso. Con un valor hora de 10 dólares dan 750 dólares. Ese valor lo fijó el grupo como referencia y es menor que lo que sugiere el Consejo de Ciencias Informáticas de La Rioja para programación web, 90.777 pesos la hora en abril de 2026. El mantenimiento son de cuatro a ocho horas por mes, de 40 a 80 dólares, y al dólar oficial de 1.570 pesos equivale a entre 62.800 y 125.600 pesos por mes.\n\nLa pregunta del cliente fue por qué pagar mantenimiento si contrata el servidor más barato: porque el servidor incluye el equipo y la red, pero los parches, los certificados y las copias de seguridad quedan a cargo de quien lo administra, y el personal del taller no lo hace.`);
+    `El presupuesto separa lo que se contrata al proveedor de lo que presta la consultora, con precios de proveedores reales consultados en noviembre de 2026.
+
+La infraestructura del primer año, con el dominio, cuesta unos ciento cuarenta y ocho mil pesos si se paga el año por adelantado, o unos doscientos veintiséis mil si se paga mes a mes. Recomendamos el pago anual porque ahorra casi 78 mil pesos, un 36 % frente al pago mensual, y adelantar un año es poco comparado con los 24 o 48 meses que pide Hostinger. DonWeb lo anuncia como 55 % de descuento, pero lo calcula sobre un precio de referencia más alto que el mensual. La implementación del MVP son 75 horas, porque partimos de la prueba de concepto, que ya resuelve la regla de estados, el seguimiento y el ingreso. Con un valor hora de 20 dólares dan 1.500 dólares, unos 2,4 millones de pesos. Fijamos 20 dólares porque está dentro del rango de un desarrollador junior freelance en Argentina, de 15 a 25 dólares la hora. Lo elegimos así porque el cliente es un taller pequeño y es nuestro primer proyecto. El mantenimiento son de cuatro a ocho horas por mes, de 80 a 160 dólares, y al dólar oficial de 1.570 pesos equivale a entre 125.600 y 251.200 pesos por mes.
+
+La pregunta del cliente fue por qué pagar mantenimiento si contrata el servidor más barato: porque el servidor incluye el equipo y la red, pero los parches, los certificados y las copias de seguridad quedan a cargo de quien lo administra, y el personal del taller no lo hace.`);
   const cards = [
-    ["Infraestructura, primer año", "$140.102,44", "con el descuento vigente. A precio de lista: $300.949,60", 36],
-    ["Implementación del MVP", "75 h", "USD 750 con un valor hora de USD 10, partiendo de la prueba de concepto", 36],
-    ["Mantenimiento por mes", "4 a 8 h", "USD 40 a USD 80 por mes, a USD 10 la hora", 36],
+    ["Infraestructura, primer año", "$148.510", "pago anual ($140.010, 36 % menos que mes a mes), con dominio. Mes a mes: $226.288", 36],
+    ["Implementación del MVP", "75 h", "USD 1.500 con un valor hora de USD 20, partiendo de la prueba de concepto. Unos $2.355.000", 36],
+    ["Mantenimiento por mes", "4 a 8 h", "USD 80 a USD 160 por mes, a USD 20 la hora", 36],
   ];
   cards.forEach(([rotulo, grande, detalle, tam], i) => {
     const x = 0.6 + i * 4.1;
@@ -408,28 +418,37 @@ const pie = (api, presenta) => api.texto(`Presenta: ${presenta}`, 0.6, 6.98, 6, 
     s.texto(grande, x + 0.25, 2.25, 3.4, 0.85, { size: tam, color: C.navy, bold: true, valign: "middle" });
     s.texto(detalle, x + 0.25, 3.25, 3.4, 1.1, { size: 14, color: C.ink });
   });
-  s.rect(0.6, 4.65, 7.5, 2.15, { fill: C.soft, radius: 0.12 });
+  s.rect(0.6, 4.65, 4.8, 2.15, { fill: C.soft, radius: 0.12 });
   s.texto([
     { t: "Quién presta qué", b: true, s: 15, c: C.navy, after: 4 },
     { t: "DonWeb: servidor, red y copias semanales", bullet: true, after: 2 },
     { t: "NIC Argentina: dominio .com.ar, $8.500 por año", bullet: true, after: 2 },
     { t: "Cloudflare: DNS, CDN y certificado, $0", bullet: true, after: 2 },
     { t: "La consultora: desarrollo, puesta en producción, mantenimiento y soporte", bullet: true },
-  ], 0.85, 4.75, 7.1, 2.0, { size: 14 });
-  s.rect(8.3, 4.65, 4.43, 2.15, { fill: C.white, line: C.line, lw: 1.5, radius: 0.12 });
+  ], 0.8, 4.75, 4.45, 2.0, { size: 14 });
+  s.rect(5.6, 4.65, 4.0, 2.15, { fill: "FDF3EA", line: "E2701F", lw: 2.25, radius: 0.12 });
+  s.texto([
+    { t: "LA PREGUNTA DE DANIEL", b: true, s: 13, c: "B4520F", after: 3 },
+    { t: "¿Por qué pagar mantenimiento si ya pago el servidor?", b: true, s: 22, c: C.navy, after: 4 },
+  ], 5.8, 4.75, 3.65, 2.0, { size: 22 });
+  s.rect(9.8, 4.65, 2.93, 2.15, { fill: C.white, line: C.line, lw: 1.5, radius: 0.12 });
   s.texto([
     { t: "Fuentes", b: true, s: 15, c: C.navy, after: 4 },
-    { t: "Precios de proveedores: sitios oficiales, 6/11/2026", s: 14, after: 3 },
-    { t: "Valor hora: referencia del grupo. El consejo de La Rioja sugiere $90.777 para programación web (abril 2026)", s: 14 },
-  ], 8.5, 4.75, 4.05, 2.0, { size: 14 });
+    { t: "Precios de proveedores: sitios oficiales, 6/11/2026; DonWeb, configurador del 12/11/2026", s: 12, after: 3 },
+    { t: "Valor hora: USD 20, rango de desarrollador junior freelance en Argentina (USD 15 a 25, 2026)", s: 12 },
+  ], 9.95, 4.75, 2.68, 2.0, { size: 12 });
   pie(s, ROCIO);
 }
 
 // ================================================================ 8. Recomendación e imprevistos (Rocío)
 {
   const s = nueva("OSCURA", "Recomendación e imprevistos", ROCIO,
-    `Para cerrar, nuestra recomendación: un DonWeb Cloud Server con un plan de mantenimiento de la consultora. Incluye PostgreSQL sin sumar otro proveedor, se paga por mes en pesos y los servidores están en Argentina. Quedan abiertos tres puntos antes de contratar: confirmar por escrito cuánto dura el descuento, cotizar las copias diarias y revisar con el cliente las horas estimadas.\n\nSi el docente plantea un imprevisto, así lo analizaríamos. Si crecen los usuarios, se amplían procesador, memoria o disco, con un reinicio de tres a cinco minutos. Si baja el presupuesto, un plan más chico, menos horas de mantenimiento y la segunda etapa postergada. Si cae el servidor, se recrea con Docker Compose desde las copias y se pierde como máximo un día. Si se pierde información, están las copias nocturnas fuera del servidor y las del proveedor. Una funcionalidad nueva pasa primero por la especificación y las horas. Y para cambiar de proveedor, todo corre en contenedores con PostgreSQL estándar, así que se traslada con una copia de la base.\n\nMuchas gracias. Quedamos a disposición para las preguntas.`);
-  s.texto("Recomendamos un DonWeb Cloud Server con un plan de mantenimiento: PostgreSQL incluido, pago mensual en pesos y servidores en Argentina", 0.6, 1.45, 12.1, 1.0, { size: 20, color: C.white, bold: true });
+    `Para cerrar, nuestra recomendación: un DonWeb Cloud Server con un plan de mantenimiento de la consultora. Incluye PostgreSQL sin sumar otro proveedor, se paga en pesos sin adelantar más de un año y los servidores están en Argentina. Quedan abiertos tres puntos antes de contratar: confirmar por escrito el precio de renovación del segundo año, cotizar las copias diarias y revisar con el cliente las horas estimadas.
+
+Si el docente plantea un imprevisto, así lo analizaríamos. Si crecen los usuarios, se amplían procesador, memoria o disco, con un reinicio de tres a cinco minutos. Si baja el presupuesto, un plan más chico, menos horas de mantenimiento y la segunda etapa postergada. Si cae el servidor, se recrea con Docker Compose desde las copias y se pierde como máximo un día. Si se pierde información, están las copias nocturnas fuera del servidor y las del proveedor. Una funcionalidad nueva pasa primero por la especificación y las horas. Y para cambiar de proveedor, todo corre en contenedores con PostgreSQL estándar, así que se traslada con una copia de la base.
+
+Muchas gracias. Quedamos a disposición para las preguntas.`);
+  s.texto("Recomendamos un DonWeb Cloud Server con un plan de mantenimiento: PostgreSQL incluido, pago en pesos sin adelantar más de un año y servidores en Argentina", 0.6, 1.45, 12.1, 1.0, { size: 20, color: C.white, bold: true });
   const imprevistos = [
     ["Más usuarios", "Se amplían procesador, memoria o disco, con un reinicio de 3 a 5 minutos"],
     ["Menos presupuesto", "Un plan más chico, menos horas de mantenimiento y la segunda etapa postergada"],

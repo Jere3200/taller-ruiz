@@ -56,6 +56,7 @@ const reemplazos = {
   "{{LOGO_CLARO}}": logoSvg("logo-light.svg", { clase: "logo-grande" }),
   "{{LOGO_MARCA_CLARA}}": logoSvg("logo-light.svg", { solo: true, clase: "logo-marca" }),
   "{{LOGO_MARCA_OSCURA}}": logoSvg("logo.svg", { solo: true, clase: "logo-marca" }),
+  "{{LOGO_RUMBO}}": `data:image/svg+xml;base64,${base64("logo-rumbo.svg")}`,
   "{{IMG_WIREFRAME}}": `data:image/png;base64,${base64("wireframe-tablero.png")}`,
   "{{IMG_PANEL}}": `data:image/png;base64,${base64("panel.png")}`,
   "{{IMG_DETALLE}}": `data:image/png;base64,${base64("detalle.png")}`,
