@@ -47,6 +47,8 @@ Todos pueden recibir preguntas sobre cualquier parte del trabajo, así que convi
 
 La demostración (diapositiva 4) tiene un simulador dentro de la presentación, pero conviene mostrar también el sistema real, con la API y el front corriendo en la computadora de la defensa.
 
+**Forma rápida:** doble clic en `Iniciar demo.cmd`, en la raíz del repositorio. Levanta todo, abre el navegador y muestra en la ventana la contraseña y la petición para Postman con el token. Los pasos de abajo son la forma manual.
+
 1. Levantar la API: en `api/`, copiar `.env.example` a `.env`, completar `JWT_SECRET` y `DEMO_PASSWORD`, y correr `npm run dev` (puerto 4000).
 2. Levantar el front: en `web/`, `npm run dev` (puerto 3000).
 3. Si querés que el límite de consultas no moleste durante la demo, subí `TRACKING_LIMIT` en `api/.env`.

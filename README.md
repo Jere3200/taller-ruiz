@@ -16,6 +16,12 @@ Los clientes consultan el estado de su vehículo con un código de seguimiento, 
 | `Taller Ruiz.html` | Diseño de la interfaz exportado de Claude Design |
 | [`docs/ux/`](docs/ux/README.md) | UX/UI: persona, user flow, wireframe y justificación, también en [Figma](https://www.figma.com/design/FUW1FnMtCgUGFZMrJsvhKE) |
 
+## Demo rápida (local)
+
+En Windows, doble clic en **`Iniciar demo.cmd`**. En cualquier sistema: `node scripts/demo.mjs`. Solo hace falta Node.js 24 o superior.
+
+El script instala las dependencias si faltan, levanta la API (puerto 4000) y el front (puerto 3000), comprueba que un salto inválido de estado responda 422 y abre el seguimiento de la orden TR-1042 en el navegador. En la ventana muestra el usuario y una contraseña generada para esa sesión, y la petición lista para Postman con su token. No usa `.env`: el secreto y la contraseña cambian en cada arranque. Para cerrar, `Ctrl + C` o cerrar la ventana; al volver a abrir, las órdenes vuelven al estado inicial.
+
 ## Cómo ejecutarlo
 
 Hacen falta dos procesos, la API en el puerto 4000 y el front en el 3000. Las instrucciones completas, con las variables de entorno, están en [`api/README.md`](api/README.md) y [`web/README.md`](web/README.md).
